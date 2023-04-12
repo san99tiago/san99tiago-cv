@@ -1,4 +1,9 @@
+# Own ignores
+temp.*
+
+# NextJs/React ignores
 node_modules
 dist
 .next
 .env
+out/**
