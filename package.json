@@ -4,8 +4,7 @@
   "description": "Santiago's Website",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev -H 0.0.0.0",
-    "dev1": "next dev -H 0.0.0.0",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"
