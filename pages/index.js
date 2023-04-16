@@ -6,6 +6,7 @@ import {
     Box,
     SimpleGrid,
     Button,
+    Text,
     List,
     ListItem,
     useColorModeValue,
@@ -29,6 +30,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
     <Layout>
         <Container>
+
             <Box
                 borderRadius="lg"
                 mb={6}
@@ -37,15 +39,18 @@ const Home = () => (
                 bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 css={{ backdropFilter: 'blur(10px)' }}
             >
-                Hello, I&apos;m an DevOps Engineer based in Colombia!
+                Hey, I love to learn new tech things everyday!
             </Box>
 
             <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        Santiago Garcia
+                    <Heading
+                        as="h2"
+                        variant="page-title"
+                    >
+                        Santiago Garcia Arango
                     </Heading>
-                    {/* <p>Digital Craftsman ( Artist / Developer / Designer )</p> */}
+                    {<p> DevSecOps | AWS Community Builder | Serverless </p>}
                 </Box>
                 <Box
                     flexShrink={0}
@@ -64,7 +69,7 @@ const Home = () => (
                         overflow="hidden"
                     >
                         <ProfileImage
-                            src="/images/santiago.jfif"
+                            src="/images/SantiagoGarciaArango.jfif"
                             alt="Profile image"
                             borderRadius="full"
                             width="100"
@@ -72,6 +77,10 @@ const Home = () => (
                         />
                     </Box>
                 </Box>
+            </Box>
+
+            <Box>
+                <Text>{``}</Text>
             </Box>
 
             <Section delay={0.1}>
