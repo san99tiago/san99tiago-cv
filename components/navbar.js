@@ -92,7 +92,8 @@ const Navbar = props => {
 
                     <LinkItem
                         target="_blank"
-                        href="https://github.com/san99tiago"
+                        href="/pdfs/cv-santiago-garcia-arango.pdf"
+                        locale={"false"}
                         path={path}
                         display="inline-flex"
                         alignItems="center"
@@ -130,7 +131,10 @@ const Navbar = props => {
                                 </MenuItem>
                                 <MenuItem
                                     as={Link}
-                                    href="https://github.com/san99tiago"
+                                    target="_blank"
+                                    href="/pdfs/cv-santiago-garcia-arango.pdf"
+                                    locale={"false"}
+                                    path={path}
                                 >
                                     CV
                                 </MenuItem>

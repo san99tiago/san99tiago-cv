@@ -12,16 +12,21 @@ import {
     chakra,
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import Image from 'next/image'
+
+// Main components
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+
+// End page thumbnails
 import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'
 import thumbGitHub from '../public/images/links/thumbnail_san99tiago_github.png'
 import thumbLinkedin from '../public/images/links/thumbnail_san99tiago_linkedin.png'
 import thumbInstagram from '../public/images/links/thumbnail_san99tiago_instagram.png'
-import Image from 'next/image'
+
 
 const ProfileImage = chakra(Image, {
     shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -62,18 +67,18 @@ const Home = () => (
                         borderColor="whiteAlpha.800"
                         borderWidth={2}
                         borderStyle="solid"
-                        w="100px"
-                        h="100px"
+                        w="120px"
+                        h="120px"
                         display="inline-block"
                         borderRadius="full"
                         overflow="hidden"
                     >
                         <ProfileImage
                             src="/images/SantiagoGarciaArango.jfif"
-                            alt="Profile image"
+                            alt="Profile Image - Santiago Garcia Arango"
                             borderRadius="full"
-                            width="100"
-                            height="100"
+                            width="120"
+                            height="120"
                         />
                     </Box>
                 </Box>
@@ -89,11 +94,11 @@ const Home = () => (
                 </Heading>
 
                 <Paragraph>
-                    I am a curious Mechatronics Engineer excited about creating software solutions. I'm currently exploring DevSecOps, advanced AWS architectures, and diving into Kubernetes.
+                    I am a curious Mechatronics Engineer excited about creating the software of the future with event-driven architectures. I'm currently working in production-grade advanced AWS workflows, following DevSecOps best practices, and diving into Kubernetes.
                 </Paragraph>
 
                 <Paragraph>
-                    Likewise, I have skills leading and working in teams, and I'm passionate about sharing my knowledge and learning the art of how everything actually works.
+                    Likewise, I'm passionate about sharing my knowledge in fun ways and learning the art of how everything actually works because I'm a dreamer of a better future thanks to technology. I am eager to be part of the ongoing transformation of technology and its impact on our daily lives.
                 </Paragraph>
 
                 <Box>
@@ -101,7 +106,7 @@ const Home = () => (
                 </Box>
 
                 <Paragraph>
-                    Feel free to visit my YouTube channel to find cool tutorials:
+                    Feel free to visit my starting YouTube channel:
                     &quot;
                     <Link
                         as={NextLink}
@@ -132,15 +137,15 @@ const Home = () => (
                 </Heading>
                 <BioSection>
                     <BioYear>Coding Languages</BioYear>
-                    Python, JavaScript, Golang, TypeScript, Java, Bash Scripting, MATLAB, HTML, CSS, C, Arduino.
+                    Python, JavaScript, TypeScript, Bash Scripting, Golang, Java, MATLAB, HTML, CSS, C, Arduino.
                 </BioSection>
                 <BioSection>
                     <BioYear>Technical</BioYear>
-                    Git, Docker, AWS*, Terraform, CDK, Kubernetes, Linux Distributions, SonarQube, Azure DevOps, Jenkins, IBM WAS, IBM MQ, Packer, SQL, No-SQL, MetaSploit, Wireshark, Netcat, IoT, Simulink, LaTex.
+                    Git, Docker, AWS (Certified x2), Terraform, CDK, GitLab CI, Kubernetes, Linux Distributions, SonarQube, Azure DevOps, Jenkins, IBM WAS, IBM MQ, Packer, SQL, No-SQL, MetaSploit, Wireshark, Netcat, IoT, Simulink, LaTex.
                 </BioSection>
                 <BioSection>
                     <BioYear>Design/Strategies/Patterns</BioYear>
-                    TDD, OWASP, Serverless, Event Driven Architectures, Agile-Scrum, Pair Programming, Clean Code, Static Code Analysis, DAST, SAST.
+                    TDD, OWASP, Serverless, Event Driven Architectures, Agile-Scrum, Pair Programming, Clean Code, Static Code Analysis, Design Patterns, DAST, SAST.
                 </BioSection>
             </Section>
 
@@ -175,7 +180,7 @@ const Home = () => (
                 </BioSection>
             </Section>
 
-            <Section delay={0.3}>
+            <Section delay={0.5}>
                 <Heading as="h3" variant="section-title">
                     Find Out More
                 </Heading>
