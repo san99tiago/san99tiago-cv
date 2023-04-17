@@ -184,26 +184,30 @@ const Home = () => (
                     <GridItem
                         href="https://www.youtube.com/@san99tiago"
                         title="Santiago Garcia Arango Tech"
+                        alt="YouTube Santiago Garcia Arango"
                         thumbnail={thumbYouTube}
-                    >
+                        >
                         DevOps and AWS Tutorials!
                     </GridItem>
                     <GridItem
                         href="https://github.com/san99tiago"
                         title="GitHub san99tiago"
+                        alt="GitHub san99tiago"
                         thumbnail={thumbGitHub}
-                    >
+                        >
                         Open Source projects!
                     </GridItem>
                     <GridItem
                         href="https://www.linkedin.com/in/san99tiago/"
                         title="LinkedIn san99tiago"
+                        alt="LinkedIn san99tiago"
                         thumbnail={thumbLinkedin}
-                    >
+                        >
                     </GridItem>
                     <GridItem
                         href="https://instagram.com/san99tiago"
                         title="Instagram san99tiago"
+                        alt="Instagram san99tiago"
                         thumbnail={thumbInstagram}
                     >
                     </GridItem>
