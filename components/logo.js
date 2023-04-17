@@ -11,10 +11,6 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
-  > svg {
-    transition: 200ms ease;
-  }
-
   &:hover > svg {
     colorScheme="teal";
   }
