@@ -9,8 +9,8 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Santiago Garcia Arango Homepage" />
-                <meta name="author" content="Santiago Garcia Arango" />
+                <meta name="description" content="Santiago Garcia Arango (san99tiago) portfolio with content, experience and projects." />
+                <meta name="author" content="Santiago Garcia Arango (san99tiago)" />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <meta name="github:site" content="@san99tiago" />

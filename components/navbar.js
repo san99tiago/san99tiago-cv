@@ -77,6 +77,9 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
+                    <LinkItem href="/" path={path}>
+                        About
+                    </LinkItem>
                     <LinkItem href="/content" path={path}>
                         Content
                     </LinkItem>
@@ -84,7 +87,7 @@ const Navbar = props => {
                         Experience
                     </LinkItem>
                     <LinkItem href="/contact" path={path}>
-                        Contact Me
+                        Contact
                     </LinkItem>
 
                     <LinkItem
