@@ -9,7 +9,7 @@ const variants = {
 }
 
 const Layout = ({ children, title }) => {
-    const t = `${title} - Takuya Matsuyama`
+    const t = `${title} - Santiago Garcia Arango`
     return (
         <motion.article
             initial="hidden"
@@ -23,7 +23,9 @@ const Layout = ({ children, title }) => {
                 {title && (
                     <Head>
                         <title>{t}</title>
-                        <meta name="twitter:title" content={t} />
+                        <meta name="author" content="Santiago Garcia Arango" />
+                        <meta name="github:site" content="@san99tiago" />
+                        <meta name="twitter:title" content="Santiago Garcia Arango" />
                         <meta property="og:title" content={t} />
                     </Head>
                 )}

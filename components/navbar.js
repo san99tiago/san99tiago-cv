@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoDocumentTextOutline } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
@@ -77,24 +77,27 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/works" path={path}>
-                        Works
+                    <LinkItem href="/content" path={path}>
+                        Content
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
+                    <LinkItem href="/experience" path={path}>
+                        Experience
+                    </LinkItem>
+                    <LinkItem href="/contact" path={path}>
+                        Contact Me
                     </LinkItem>
 
                     <LinkItem
                         target="_blank"
-                        href="https://github.com/san99tiago/san99tiago"
+                        href="https://github.com/san99tiago"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
                         style={{ gap: 4 }}
                         pl={2}
                     >
-                        <IoLogoGithub />
-                        Source
+                        <IoDocumentTextOutline />
+                        CV
                     </LinkItem>
                 </Stack>
 
@@ -113,17 +116,20 @@ const Navbar = props => {
                                 <MenuItem as={MenuLink} href="/">
                                     About
                                 </MenuItem>
-                                <MenuItem as={MenuLink} href="/works">
-                                    Works
+                                <MenuItem as={MenuLink} href="/content">
+                                    Content
                                 </MenuItem>
-                                <MenuItem as={MenuLink} href="/posts">
-                                    Posts
+                                <MenuItem as={MenuLink} href="/experience">
+                                    Experience
+                                </MenuItem>
+                                <MenuItem as={MenuLink} href="/contact">
+                                    Contact Me
                                 </MenuItem>
                                 <MenuItem
                                     as={Link}
                                     href="https://github.com/san99tiago"
                                 >
-                                    GitHub Repository
+                                    CV
                                 </MenuItem>
                             </MenuList>
                         </Menu>

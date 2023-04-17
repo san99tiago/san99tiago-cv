@@ -1,16 +1,15 @@
 import NextLink from 'next/link'
 import {
-    Link,
+    Box,
+    Button,
+    Divider,
     Container,
     Heading,
-    Box,
+    Link,
     SimpleGrid,
-    Button,
     Text,
-    List,
-    ListItem,
     useColorModeValue,
-    chakra
+    chakra,
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -18,9 +17,10 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'
+import thumbGitHub from '../public/images/links/thumbnail_san99tiago_github.png'
+import thumbLinkedin from '../public/images/links/thumbnail_san99tiago_linkedin.png'
+import thumbInstagram from '../public/images/links/thumbnail_san99tiago_instagram.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -85,115 +85,100 @@ const Home = () => (
 
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Work
+                    Who Am I?
                 </Heading>
+
                 <Paragraph>
                     I am a curious Mechatronics Engineer excited about creating software solutions. I'm currently exploring DevSecOps, advanced AWS architectures, and diving into Kubernetes.
+                </Paragraph>
 
+                <Paragraph>
                     Likewise, I have skills leading and working in teams, and I'm passionate about sharing my knowledge and learning the art of how everything actually works.
+                </Paragraph>
 
-                    Not only that, but I'm also a dreamer of a better future thanks to technology.{' '}
+                <Box>
+                    <Text>{'\n'}</Text>
+                </Box>
 
-                    . Check my YouTube;
+                <Paragraph>
+                    Feel free to visit my YouTube channel to find cool tutorials:
+                    &quot;
                     <Link
                         as={NextLink}
                         href="https://www.youtube.com/@san99tiago"
                         passHref
                         target="_blank"
-                    >
-                        Dev as Life
+                        >
+                        Santiago Garcia Arango Tech
                     </Link>
-                    &quot; has more than 100k subscribers.
+                    &quot; where I upload cool videos about DevOps and AWS.
                 </Paragraph>
                 <Box align="center" my={4}>
                     <Button
                         as={NextLink}
-                        href="/works"
+                        href="/content"
                         scroll={false}
                         rightIcon={<ChevronRightIcon />}
                         colorScheme="teal"
                     >
-                        My portfolio
+                        Explore my content!
                     </Button>
                 </Box>
             </Section>
 
             <Section delay={0.2}>
                 <Heading as="h3" variant="section-title">
-                    Bio
+                    Technical Tools
                 </Heading>
                 <BioSection>
-                    <BioYear>1999</BioYear>
-                    Born in Medellín, Colombia.
+                    <BioYear>Coding Languages</BioYear>
+                    Python, JavaScript, Golang, TypeScript, Java, Bash Scripting, MATLAB, HTML, CSS, C, Arduino.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2021</BioYear>
-                    Completed the Bachelor&apos;s Program in Mechatronic&apos;s Engieneering at EIA University
+                    <BioYear>Technical</BioYear>
+                    Git, Docker, AWS*, Terraform, CDK, Kubernetes, Linux Distributions, SonarQube, Azure DevOps, Jenkins, IBM WAS, IBM MQ, Packer, SQL, No-SQL, MetaSploit, Wireshark, Netcat, IoT, Simulink, LaTex.
                 </BioSection>
                 <BioSection>
-                    <BioYear>2021</BioYear>
-                    Worked at Pragma as DevOps Engineer
-                </BioSection>
-                <BioSection>
-                    <BioYear>2022</BioYear>
-                    Working at Bancolombia as Software Engineering Specialist
-                    Senior Systems Engineer (DevOps)
-                </BioSection>
-                <BioSection>
-                    <BioYear>2022 to present</BioYear>
-                    Senior Systems Engineer (DevOps)
+                    <BioYear>Design/Strategies/Patterns</BioYear>
+                    TDD, OWASP, Serverless, Event Driven Architectures, Agile-Scrum, Pair Programming, Clean Code, Static Code Analysis, DAST, SAST.
                 </BioSection>
             </Section>
 
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    I ♥
+                    Education
                 </Heading>
-                <Paragraph>
-                    Art, Music, Learning, DevOps, Cybersecurity
-                </Paragraph>
+                <BioSection>
+                    <BioYear>2022-present</BioYear>
+                    Senior Systems Engineer (DevOps)
+                    EPAM Systems
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022-present</BioYear>
+                    M.S. Cybersecurity
+                    IMF Smart Education
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Software Engineering Specialist (DevOps)
+                    Bancolombia
+                </BioSection>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    DevOps Engineer
+                    PRAGMA
+                </BioSection>
+                <BioSection>
+                    <BioYear>2017-2021</BioYear>
+                    B.S. Mechatronics Engineering
+                    EIA University
+                </BioSection>
             </Section>
 
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    On the web
+                    Find Out More
                 </Heading>
-                <List>
-                    <ListItem>
-                        <Link href="https://github.com/san99tiago" target="_blank">
-                            <Button
-                                variant="ghost"
-                                colorScheme="teal"
-                                leftIcon={<IoLogoGithub />}
-                            >
-                                @san99tiago
-                            </Button>
-                        </Link>
-                    </ListItem>
-                    <ListItem>
-                        <Link href="https://twitter.com/san99tiago" target="_blank">
-                            <Button
-                                variant="ghost"
-                                colorScheme="teal"
-                                leftIcon={<IoLogoTwitter />}
-                            >
-                                @san99tiago
-                            </Button>
-                        </Link>
-                    </ListItem>
-
-                    <ListItem>
-                        <Link href="https://instagram.com/san99tiago" target="_blank">
-                            <Button
-                                variant="ghost"
-                                colorScheme="teal"
-                                leftIcon={<IoLogoInstagram />}
-                            >
-                                @san99tiago
-                            </Button>
-                        </Link>
-                    </ListItem>
-                </List>
 
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <GridItem
@@ -201,14 +186,26 @@ const Home = () => (
                         title="Santiago Garcia Arango Tech"
                         thumbnail={thumbYouTube}
                     >
-                        My YouTube channel
+                        DevOps and AWS Tutorials!
                     </GridItem>
                     <GridItem
-                        href="https://www.inkdrop.app/"
-                        title="Inkdrop"
-                        thumbnail={thumbInkdrop}
+                        href="https://github.com/san99tiago"
+                        title="GitHub san99tiago"
+                        thumbnail={thumbGitHub}
                     >
-                        Que ponemos aquí...
+                        Open Source projects!
+                    </GridItem>
+                    <GridItem
+                        href="https://www.linkedin.com/in/san99tiago/"
+                        title="LinkedIn san99tiago"
+                        thumbnail={thumbLinkedin}
+                    >
+                    </GridItem>
+                    <GridItem
+                        href="https://instagram.com/san99tiago"
+                        title="Instagram san99tiago"
+                        thumbnail={thumbInstagram}
+                    >
                     </GridItem>
                 </SimpleGrid>
             </Section>
