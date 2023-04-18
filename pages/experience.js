@@ -32,7 +32,7 @@ const Experience = () => (
                 <Section delay={0.2}>
                     <WorkGridItem
                         id="bancolombia"
-                        title="Software Engineering Specialist"
+                        title="Software Specialist"
                         thumbnail={thumb_2021_07_01_experience_bancolombia}
                     >
                         Bancolombia (2021-2022)

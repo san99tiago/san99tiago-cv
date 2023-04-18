@@ -1,53 +1,53 @@
 import {
     Container,
     Badge,
+    Heading,
     Link,
-    List,
-    ListItem,
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/experience'
-import P from '../../components/paragraph'
+import { Title, BadgeStyle, BadgeGreen, BadgeYellow, ExperienceSection, ExperienceEmphasis, ExperienceImage } from '../../components/experience'
 import Layout from '../../components/layouts/article'
+import P from '../../components/paragraph'
+import Section from '../../components/section'
 
-const Work = () => (
+
+const ExperienceTemplate = () => (
     <Layout title="Experience X">
         <Container>
             <Title>
-                Experience X <Badge>2023</Badge>
+                Experience X <Badge>2023-present</Badge>
             </Title>
             <P>
-                Experience X details.
+                Experience X general explanation.
             </P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Website</Meta>
-                    <Link href="https://github.com/san99tiago/aws-cdk-hello-world">
-                        https://github.com/san99tiago/aws-cdk-hello-world <ExternalLinkIcon mx="2px" />
-                    </Link>
-                </ListItem>
-                <ListItem>
-                    <Meta>Project</Meta>
-                    <span>Awesome project example</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Tools</Meta>
-                    <span>AWS/CloudFormation/EC2/ASG</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Blog Post</Meta>
-                    <Link href="https://github.com/san99tiago/aws-cdk-hello-world">
-                        Some cool achievement based on the link <ExternalLinkIcon mx="2px" />
-                    </Link>
-                </ListItem>
-            </List>
 
-            <WorkImage src="/images/experience/experience_x/example_01.png" alt="change_me_to_something_relevant" />
-            <WorkImage src="/images/experience/experience_x/example_01.png" alt="change_me_to_something_relevant" />
-            <WorkImage src="/images/experience/experience_x/example_01.png" alt="change_me_to_something_relevant" />
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Experience X Sub-Experience 1
+                </Heading>
+                <ExperienceSection>
+                    <ExperienceEmphasis>Description</ExperienceEmphasis>
+                    Project that XXXX and YYYY.
+                </ExperienceSection>
+                <ExperienceSection>
+                    <BadgeStyle><BadgeGreen>Technologies</BadgeGreen></BadgeStyle>
+                    Docker, Docker-Compose, Jenkins, NodeJs, Flask, MySQL, MongoDB, ELK, IBM, GoLang, IBM, Ubuntu, Prometheus.
+                </ExperienceSection>
+                <ExperienceSection>
+                    <BadgeStyle><BadgeYellow>Source Code</BadgeYellow></BadgeStyle>
+                    <Link
+                        href="https://github.com/san99tiago/docker-pirate"
+                        target='_blank'
+                        >
+                        https://github.com/san99tiago/docker-pirate<ExternalLinkIcon mx="2px" />
+                    </Link>
+                </ExperienceSection>
+            </Section>
+
+            <ExperienceImage src="/images/experience/2018_01_01_experience_cool_projects.png" alt="change_me_to_something_relevant" />
 
         </Container>
     </Layout>
 )
 
-export default Work
+export default ExperienceTemplate
