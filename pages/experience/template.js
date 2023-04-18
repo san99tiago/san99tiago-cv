@@ -4,7 +4,6 @@ import {
     Link,
     List,
     ListItem,
-    AspectRatio
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/experience'
@@ -15,10 +14,10 @@ const Work = () => (
     <Layout title="Experience X">
         <Container>
             <Title>
-                Experience X <Badge>2021-</Badge>
+                Experience X <Badge>2023</Badge>
             </Title>
             <P>
-                Experience X Lorem Ipsum for my experience X.
+                Experience X details.
             </P>
             <List ml={4} my={4}>
                 <ListItem>
