@@ -1,6 +1,7 @@
 import {
-    Container,
     Badge,
+    Container,
+    Divider,
     Heading,
     Link,
 } from '@chakra-ui/react'
@@ -19,6 +20,7 @@ for (let i = 0; i < DataJson.length; i++) {
     const project = DataJson[i]
     sections.push(
         <Section delay={0.1} key={project.title}>
+            <Divider my={5} />
             <Heading as='h3' variant='section-title'>
                 {project.title}
             </Heading>
@@ -48,7 +50,7 @@ const ExperienceCoolProjects = () => (
                 Cool Projects <Badge>2017-present</Badge>
             </Title>
             <P>
-                Cool Projects for personal experiments or for helping friends that have asked me to develop something challenging for them.
+                Discover these {sections.length} exciting projects, each personally crafted by me for both personal experimentation and to assist friends with challenging endeavors.
             </P>
             {sections}
         </Container>
