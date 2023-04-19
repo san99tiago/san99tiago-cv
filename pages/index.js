@@ -22,10 +22,10 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 // End page thumbnails
-import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'
-import thumbGitHub from '../public/images/links/thumbnail_san99tiago_github.png'
-import thumbLinkedin from '../public/images/links/thumbnail_san99tiago_linkedin.png'
-import thumbInstagram from '../public/images/links/thumbnail_san99tiago_instagram.png'
+import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
+import thumbGitHub from '../public/images/home/thumbnail_san99tiago_github.png'
+import thumbLinkedin from '../public/images/home/thumbnail_san99tiago_linkedin.png'
+import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram.png'
 
 
 const ProfileImage = chakra(Image, {
@@ -94,11 +94,11 @@ const Home = () => (
                 </Heading>
 
                 <Paragraph>
-                    I am a curious Mechatronics Engineer excited about creating the software of the future with event-driven architectures. I'm currently working in production-grade advanced AWS workflows, following DevSecOps best practices, and diving into Kubernetes.
+                    As a curious Mechatronics Engineer, I'm passionate about creating cutting-edge software using event-driven architectures. I'm currently immersed in production-grade AWS workflows, leveraging DevSecOps best practices to drive innovation.
                 </Paragraph>
 
                 <Paragraph>
-                    Likewise, I'm passionate about sharing my knowledge in fun ways and learning the art of how everything actually works because I'm a dreamer of a better future thanks to technology. I am eager to be part of the ongoing transformation of technology and its impact on our daily lives.
+                    Likewise, I'm passionate about sharing my knowledge in fun ways and learning the art of &quot;how everything actually works&quot;, driven by a vision of a better future thanks to technology. I'm eager to be part of the ongoing transformation of technology and its interesting impact on our daily lives.
                 </Paragraph>
 
                 <Box>
@@ -106,7 +106,7 @@ const Home = () => (
                 </Box>
 
                 <Paragraph>
-                    Feel free to visit my starting YouTube channel:
+                    Discover my starting YouTube channel for exciting Spanish content:
                     &quot;
                     <Link
                         as={NextLink}
@@ -126,7 +126,7 @@ const Home = () => (
                         rightIcon={<ChevronRightIcon />}
                         colorScheme="teal"
                     >
-                        Explore my content!
+                        Explore my latest posts!
                     </Button>
                 </Box>
             </Section>
@@ -136,22 +136,26 @@ const Home = () => (
                     Technical Tools
                 </Heading>
                 <BioSection>
-                    <BioYear>Coding Languages</BioYear>
-                    Python, JavaScript, TypeScript, Bash Scripting, Golang, Java, MATLAB, HTML, CSS, C, Arduino.
+                    <BioYear>Languages</BioYear>
+                    Python, JavaScript, TypeScript, Bash, HTML, CSS, GoLang, Java, SQL, GraphQL, MATLAB, Arduino.
+                </BioSection>
+                <BioSection>
+                    <BioYear>Methodologies</BioYear>
+                    CI/CD, Infrastructure as Code, DevSecOps, Event Driven Architectures, TDD, SOLID, Design Patterns, Scrum, Clean Code, Static Code Analysis, Pair Programming.
                 </BioSection>
                 <BioSection>
                     <BioYear>Technical</BioYear>
-                    Git, Docker, AWS (Certified x2), Terraform, CDK, GitLab CI, Kubernetes, Linux Distributions, SonarQube, Azure DevOps, Jenkins, IBM WAS, IBM MQ, Packer, SQL, No-SQL, MetaSploit, Wireshark, Netcat, IoT, Simulink, LaTex.
+                    Git, AWS (see details below), Terraform, Docker, Kubernetes, Linux Distributions, GitLab CI,Azure DevOps, Jenkins, SonarQube, SQL, No-SQL, IBM WAS, IBM MQ, Packer, OWASP, MetaSploit, Wireshark, Netcat, IoT, LaTex.
                 </BioSection>
                 <BioSection>
-                    <BioYear>Design/Strategies/Patterns</BioYear>
-                    TDD, OWASP, Serverless, Event Driven Architectures, Agile-Scrum, Pair Programming, Clean Code, Static Code Analysis, Design Patterns, DAST, SAST.
+                    <BioYear>AWS Experience</BioYear>
+                    [AWS Certified x2], IAM, CloudFormation, CDK, Organizations, Lambda, Lambda Layer, API Gateway, DynamoDB, CloudWatch, S3, CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2, EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM, CodeBuild, CodePipeline, IAM Identity Center, Control Tower, Chime.
                 </BioSection>
             </Section>
 
             <Section delay={0.3}>
                 <Heading as="h3" variant="section-title">
-                    Education
+                    Education & Experience
                 </Heading>
                 <BioSection>
                     <BioYear>2022-present</BioYear>

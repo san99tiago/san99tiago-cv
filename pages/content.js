@@ -11,10 +11,10 @@ import thumb_2021_04_09_Practicas_DevOps_General from '../public/images/content/
 import thumb_2023_04_Video_Tutorial_CDK_1_Lambda from '../public/images/content/2023_04_Video_Tutorial_CDK_1_Lambda.png'
 
 // End page thumbnails
-import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'
-import thumbGitHub from '../public/images/links/thumbnail_san99tiago_github.png'
-import thumbLinkedin from '../public/images/links/thumbnail_san99tiago_linkedin.png'
-import thumbInstagram from '../public/images/links/thumbnail_san99tiago_instagram.png'
+import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
+import thumbGitHub from '../public/images/home/thumbnail_san99tiago_github.png'
+import thumbLinkedin from '../public/images/home/thumbnail_san99tiago_linkedin.png'
+import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram.png'
 
 
 const Content = () => (
