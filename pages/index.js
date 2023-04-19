@@ -22,10 +22,10 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 // End page thumbnails
-import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'
-import thumbGitHub from '../public/images/links/thumbnail_san99tiago_github.png'
-import thumbLinkedin from '../public/images/links/thumbnail_san99tiago_linkedin.png'
-import thumbInstagram from '../public/images/links/thumbnail_san99tiago_instagram.png'
+import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
+import thumbGitHub from '../public/images/home/thumbnail_san99tiago_github.png'
+import thumbLinkedin from '../public/images/home/thumbnail_san99tiago_linkedin.png'
+import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram.png'
 
 
 const ProfileImage = chakra(Image, {

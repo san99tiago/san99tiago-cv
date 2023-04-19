@@ -1,12 +1,158 @@
 [
   {
-    "title": "AWS REST-API and MySQL",
-    "description": "REST-API on top of AWS API Gateway (with Lambdas integration) that connected to MySQL database for commercial 'leads' information.",
+    "title": "Docker-Pirate",
+    "description": "Project that covers a series of relevant Docker Images with step-by-step details for their creation and with Docker-Compose functionalities enabled.",
+    "technologies": "Docker, Docker-Compose, DevOps, Jenkins, NodeJs, Flask, MySQL, MongoDB, ELK, IBM, GoLang, IBM, Ubuntu, Prometheus.",
+    "url": "https://github.com/san99tiago/docker-pirate"
+  },
+  {
+    "title": "Terraform Playground",
+    "description": "Fun infrastructure solutions and PoCs to explore Terraform concepts and deployments in AWS.",
+    "technologies": "AWS, Terraform, IaC, DevOps.",
+    "url": "https://github.com/san99tiago/terraform-playground"
+  },
+  {
+    "title": "AWS Medical Providers Automation",
+    "description": "Automation that weekly downloads and updates medical records for different datasets.",
+    "technologies": "AWS, Lambda, EventBridge, SES, S3, CDK, DevOps.",
+    "url": "https://github.com/san99tiago/aws-cdk-lambda-cms-provider-datasets"
+  },
+  {
+    "title": "AWS REST-API for Sales 'Leads'",
+    "description": "Custom-built business REST-API on top of AWS API Gateway (with Lambdas integration) that connected to MySQL database for commercial 'leads' information.",
+    "technologies": "AWS, API-Gateway, Lambda, MySQL, CDK, REST-API.",
     "url": "https://github.com/san99tiago/freelance-aws-rest-api-mysql"
   },
   {
-    "title": "AWS CDK Templates for Lambda Docker Images",
-    "description": "My own CDK template (pattern) for deploying AWS Lambda Functions on top of Docker images.",
+    "title": "AWS CDK Lambda Docker Templates",
+    "description": "My own CDK template (simple pattern) for deploying AWS Lambda Functions on top of Docker images. It covers Python and NodeJs images.",
+    "technologies": "AWS, CDK, Lambda, Docker, Python, NodeJs.",
     "url": "https://github.com/san99tiago/aws-cdk-lambda-docker-templates"
+  },
+  {
+    "title": "Python Clean Tests Examples and Templates",
+    "description": "Useful Python examples for Clean Code and Unit Testing on top of UnitTest Framework and PyTest.",
+    "technologies": "Python, Tests, Unittest, PyTest, Mocks, Object-Oriented-Programming.",
+    "url": "https://github.com/san99tiago/python-clean-tests"
+  },
+  {
+    "title": "AWS Lambda Web Scrapper for Supplier Datasets",
+    "description": "Custom-built solution for web scrapping different supplier datasets that runs on AWS-Lambda with Docker images and Selenium.",
+    "technologies": "AWS, Lambda, Selenium, Docker, ECR, Python, SES, EventBridge, S3.",
+    "url": "https://github.com/san99tiago/aws-cdk-lambda-medical-pecos-files"
+  },
+  {
+    "title": "AWS REST-API for URL Shortening",
+    "description": "Fun AWS CDK solution with an API Gateway and DynamoDB that is designed for URL shortening redirects.",
+    "technologies": "AWS, API-Gateway, Lambda, DynamoDB, Python, REST-API, CDK.",
+    "url": "https://github.com/san99tiago/aws-cdk-url-shortener"
+  },
+  {
+    "title": "My Own CloudFormation Example Templates",
+    "description": "Simple AWS CF templates to review previously deployed PoCs. Mostly for sandbox environments.",
+    "technologies": "AWS, CloudFormation, IaC.",
+    "url": "https://github.com/san99tiago/aws-cf-custom-templates"
+  },
+  {
+    "title": "REST-API for Australian Climate Sensors",
+    "description": "API developed on top of NodeJS+Express, and used MongoDB (Atlas) for backend. Solution with Docker containers.",
+    "technologies": "MongoDB, REST-API, Auth, JWT, NodeJS, Express, Docker, Docker-Compose.",
+    "url": "https://github.com/san99tiago/docker-api-express-mongo"
+  },
+  {
+    "title": "AWS Lambda for Downloading HR Files",
+    "description": "Automation on AWS Lambda for downloading Human Resources files to S3 bucket based on rules (if already downloaded or not).",
+    "technologies": "AWS, Lambda, EventBridge, SES, S3.",
+    "url": "https://github.com/san99tiago/freelance-lambda-leie-automation"
+  },
+  {
+    "title": "AWS CDK Athena-Glue S3 Workflow",
+    "description": "Simple CDK-TypeScript project for a Athena/Glue workflow for simple ETL solution on top of S3.",
+    "technologies": "AWS, Athena, Glue, DataCatalog, S3, CDK, TypeScript.",
+    "url": "https://github.com/san99tiago/aws-cdk-athena-s3-workflow"
+  },
+  {
+    "title": "AWS CDK Hello World",
+    "description": "Simple CDK project with best practices for a 'Hello World' Lambda Function.",
+    "technologies": "AWS, CDK, Lambda, Lambda-Url.",
+    "url": "https://github.com/san99tiago/aws-cdk-hello-world"
+  },
+  {
+    "title": "Python GUI Desktop Applications and Games",
+    "description": "Some of my cool Python GUI projects on top of Tkinter and PyQT.",
+    "technologies": "Python, GUI, UI, Desktop-App, Tkinter, PyQT.",
+    "url": "https://github.com/san99tiago/PYTHON_GUI"
+  },
+  {
+    "title": "Low Level Machine Learning Experiments",
+    "description": "Multiple challenging Machine Learning problems and solutions on top of Python and MatLab.",
+    "technologies": "Python, Matlab, Machine-Learning, Neural-Networks.",
+    "url": "https://github.com/san99tiago/ML_BASICS"
+  },
+  {
+    "title": "Low Level Robotics Experiments",
+    "description": "Multiple challenging Robotics problems and solutions on top of Python and MatLab.",
+    "technologies": "Python, Matlab, Robotics, Control-Systems.",
+    "url": "https://github.com/san99tiago/ROBOTICS_BASICS"
+  },
+  {
+    "title": "Low Level Computer Vision Experiments",
+    "description": "Multiple challenging Computer Vision problems and solutions on top of OpenCV (Python).",
+    "technologies": "Python, Computer-Vision, OpenCV, PIL, Matplotlib, Darknet.",
+    "url": "https://github.com/san99tiago/OPENCV_BASICS"
+  },
+  {
+    "title": "Low Level Internet of Things Experiments",
+    "description": "Multiple challenging Internet of Things problems and solutions on top of JavaScript, Python and Arduino.",
+    "technologies": "Internet-of-Things, NodeJs, Express, Arduino, Python, JavaScript.",
+    "url": "https://github.com/san99tiago/IOT_EIA"
+  },
+  {
+    "title": "Hackathon Multi-Purpose Projects",
+    "description": "Some projects of my previous Hackathons.",
+    "technologies": "Hackathon, Multiple.",
+    "url": "https://github.com/san9tiago/MULTIPLE_PROJECTS"
+  },
+  {
+    "title": "Projects for learning GoLang",
+    "description": "These are my awesome experiments and PoCs for learning Go (GoLang).",
+    "technologies": "Golang.",
+    "url": "https://github.com/san99tiago/go-gopher-go"
+  },
+  {
+    "title": "Projects for learning Java",
+    "description": "These are my awesome experiments and PoCs for learning Java.",
+    "technologies": "Java, Spring, SpringBoot, JDBC, Object-Oriented-Programming.",
+    "url": "https://github.com/san99tiago/java-barista"
+  },
+  {
+    "title": "Projects for learning JavaScript",
+    "description": "These are my awesome experiments and PoCs for learning JavaScript.",
+    "technologies": "JavaScript, NodeJs, HTML, CSS, Object-Oriented-Programming",
+    "url": "https://github.com/san99tiago/javascript-legend"
+  },
+  {
+    "title": "Python Problem Solving Code Practices",
+    "description": "These are some of my own practice LeetCode (and similar) solutions for Coding challenges on Python.",
+    "technologies": "Python, Coding-Challenges, Unittests, Object-Oriented-Programming.",
+    "url": "https://github.com/san99tiago/python-problem-solving-chief"
+  },
+  {
+    "title": "My Learning Projects for Flask Framework (Python)",
+    "description": "Cool learning PoCs and experiments for mastering Python Flask Framework.",
+    "technologies": "Python, Flask, HTML, CSS, JavaScript.",
+    "url": "https://github.com/san99tiago/WEB_FLASK_PLATZI"
+  },
+  {
+    "title": "Harvard CS50's Web Programming Course",
+    "description": "Multiple FullStack Projects inspired from the CS50 Web Programming course given at Harvard University.",
+    "technologies": "HTML, CSS, JavaScript, Python.",
+    "url": "https://github.com/san99tiago/WEB_STANFORD"
+  },
+  {
+    "title": "Desktop App for Architecture Business",
+    "description": "Automation of Excel Sheets for small architecture firm. Project allowed automatic accounting and project organization.",
+    "technologies": "Python, Tkinter, TTK, XlsxWritter, Object-Oriented-Programming.",
+    "url": "https://github.com/san99tiago/ARCHITECTURE_AUTOMATION"
   }
 ]
