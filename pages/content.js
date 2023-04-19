@@ -4,11 +4,11 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
 // Content thumbnails
-import thumb_2023_04_Video_Tutorial_CDK_1_Lambda from '../public/images/content/2023_04_Video_Tutorial_CDK_1_Lambda.png'
-import thumb_2021_04_09_Practicas_DevOps_General from '../public/images/content/2021_04_09_Practicas_DevOps_General.png'
-import thumb_2021_02_01_Flask_Frontend_and_Backend from '../public/images/content/2021_02_01_Flask_Frontend_and_Backend.png'
-import thumb_2021_01_15_PythonVirtualEnvironments from '../public/images/content/2021_01_15_PythonVirtualEnvironments.png'
 import thumb_2020_10_23_PythonTkinterGUI from '../public/images/content/2020_10_23_PythonTkinterGUI.png'
+import thumb_2021_01_15_PythonVirtualEnvironments from '../public/images/content/2021_01_15_PythonVirtualEnvironments.png'
+import thumb_2021_02_01_Flask_Frontend_and_Backend from '../public/images/content/2021_02_01_Flask_Frontend_and_Backend.png'
+import thumb_2021_04_09_Practicas_DevOps_General from '../public/images/content/2021_04_09_Practicas_DevOps_General.png'
+import thumb_2023_04_Video_Tutorial_CDK_1_Lambda from '../public/images/content/2023_04_Video_Tutorial_CDK_1_Lambda.png'
 
 // End page thumbnails
 import thumbYouTube from '../public/images/links/thumbnail_san99tiago_youtube.png'

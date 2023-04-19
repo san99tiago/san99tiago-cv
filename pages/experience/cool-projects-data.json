@@ -1,0 +1,12 @@
+[
+  {
+    "title": "AWS REST-API and MySQL",
+    "description": "REST-API on top of AWS API Gateway (with Lambdas integration) that connected to MySQL database for commercial 'leads' information.",
+    "url": "https://github.com/san99tiago/freelance-aws-rest-api-mysql"
+  },
+  {
+    "title": "AWS CDK Templates for Lambda Docker Images",
+    "description": "My own CDK template (pattern) for deploying AWS Lambda Functions on top of Docker images.",
+    "url": "https://github.com/san99tiago/aws-cdk-lambda-docker-templates"
+  }
+]
