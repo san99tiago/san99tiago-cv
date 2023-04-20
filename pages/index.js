@@ -101,9 +101,7 @@ const Home = () => (
                     Likewise, I'm passionate about sharing my knowledge in fun ways and learning the art of &quot;how everything actually works&quot;, driven by a vision of a better future thanks to technology. I'm eager to be part of the ongoing transformation of technology and its interesting impact on our daily lives.
                 </Paragraph>
 
-                <Box>
-                    <Text>{'\n'}</Text>
-                </Box>
+                <Box style={{marginTop: '10px'}}/>
 
                 <Paragraph>
                     Discover my starting YouTube channel for exciting Spanish content:
