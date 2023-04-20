@@ -1,6 +1,8 @@
 import { Box } from '@chakra-ui/react'
 import Section from './section'
 
+const currentYear = new Date().getFullYear()
+
 const Footer = () => {
     return (
         <Section>
@@ -9,7 +11,7 @@ const Footer = () => {
                 ― Japanese Proverb
             </Box>
             <Box align="center" opacity={0.4} fontSize="sm">
-                Copyright 2023 Santiago Garcia Arango
+                Copyright {currentYear} Santiago Garcia Arango
             </Box>
         </Section>
     )

@@ -120,7 +120,7 @@ const Home = () => (
                     <Button
                         as={NextLink}
                         href="/content"
-                        scroll={false}
+                        // scroll={false}
                         rightIcon={<ChevronRightIcon />}
                         colorScheme="teal"
                     >

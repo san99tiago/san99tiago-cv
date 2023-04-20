@@ -35,8 +35,9 @@ export const BadgeYellow = ({ children }) => (
 )
 
 export const ExperienceSection = styled(Box)`
-    padding-left: 3.4em;
-    text-indent: -3.4em;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    text-align: justify;
 `
 
 export const ExperienceEmphasis = styled.span`
