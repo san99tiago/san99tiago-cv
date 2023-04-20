@@ -1,7 +1,7 @@
 {
   "name": "san99tiago-cv",
-  "version": "0.0.0",
-  "description": "Santiago's Personal CV Portfolio",
+  "version": "1.0.0",
+  "description": "Santiago Garcia Arango Personal Portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
@@ -11,7 +11,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Santiago&Esteban",
+  "author": "Santiago Garcia Arango",
   "license": "Apache License",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.18",

@@ -94,11 +94,13 @@ const Home = () => (
                 </Heading>
 
                 <Paragraph>
-                    As a curious Mechatronics Engineer, I'm passionate about creating cutting-edge software using event-driven architectures. I'm currently immersed in production-grade AWS workflows, leveraging DevSecOps best practices to drive innovation.
+                    As a curious Mechatronics Engineer, I&lsquo;m passionate about creating cutting-edge software using event-driven architectures. I&lsquo;m currently immersed in production-grade AWS workflows, leveraging DevSecOps best practices to drive innovation.
                 </Paragraph>
 
+                <Box style={{marginTop: '10px'}}/>
+
                 <Paragraph>
-                    Likewise, I'm passionate about sharing my knowledge in fun ways and learning the art of &quot;how everything actually works&quot;, driven by a vision of a better future thanks to technology. I'm eager to be part of the ongoing transformation of technology and its interesting impact on our daily lives.
+                    Likewise, I&lsquo;m passionate about sharing my knowledge in fun ways and learning the art of &quot;how everything actually works&quot;, driven by a vision of a better future thanks to technology. I&lsquo;m eager to be part of the ongoing transformation of technology and its interesting impact on our daily lives.
                 </Paragraph>
 
                 <Box style={{marginTop: '10px'}}/>

@@ -20,7 +20,7 @@ const ExperienceEpamSystems = () => (
                 EPAM Systems <Badge>2023-present</Badge>
             </Title>
             <P>
-                EPAM Systems is an American company that specializes in software engineering services, digital platform engineering, and digital product design. EPAM was named to Forbes' 25 Fastest Growing Public Tech Companies multiple times.
+                EPAM Systems is an American company that specializes in software engineering services, digital platform engineering, and digital product design. EPAM was named to Forbes&lsquo; 25 Fastest Growing Public Tech Companies multiple times.
                 &nbsp;
                 <Link
                     href="https://www.epam.com"
