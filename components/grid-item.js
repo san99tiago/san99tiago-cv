@@ -26,7 +26,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         <LinkBox
             as={NextLink}
             href={`/experience/${id}`}
-            scroll={false}
+            // scroll={false}
             cursor="pointer"
         >
             <Image
