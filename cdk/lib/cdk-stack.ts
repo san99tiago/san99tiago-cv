@@ -26,9 +26,6 @@ export class CdkStaticWebsiteHostingStack extends Stack {
     const mainBucketName = domainName;
     const bucketVersioningEnabled = deploymentEnvironment == 'prod' ? true : false;
 
-    // //!TODO: Add wwwBucket (for redirecting to mainBucket)
-    // const wwwBucketName = `www.${mainBucketName}`;
-
     // Create S3 bucket for hosting static website (main one)
     const mainBucket = new s3.Bucket(this, 'BucketMain', {
       bucketName: mainBucketName,
@@ -150,6 +147,15 @@ export class CdkStaticWebsiteHostingStack extends Stack {
       recordName: domainName,
       zone: hostedZone,
     });
+    const hostedZoneARecodWWW = new route53.ARecord(this, 'ARecordWWW', {
+      comment: `A type Record www target for ${mainResourcesName} solution in ${deploymentEnvironment} env`,
+      target: route53.RecordTarget.fromAlias(new route53targets.CloudFrontTarget(cloudfrontDistribution)),
+      recordName: `www.${domainName}`,
+      zone: hostedZone,
+    });
+    // ! IMPORTANT: this A record will allow to show the content but will NOT do
+    // ! the redirect. If redirect is needed, we would have to create an S3 bucket
+    // ! with static hosting enabled and a redirect rule (plus R53 record also)
 
   }
 }
