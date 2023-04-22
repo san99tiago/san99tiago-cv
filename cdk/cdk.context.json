@@ -1,0 +1,10 @@
+{
+  "hosted-zone:account=776584753623:domainName=dev.san99tiago.com:region=us-east-1": {
+    "Id": "/hostedzone/Z0828404387C96V78XNQQ",
+    "Name": "dev.san99tiago.com."
+  },
+  "hosted-zone:account=226584130046:domainName=san99tiago.com:region=us-east-1": {
+    "Id": "/hostedzone/Z0225167YLRKYVIKDATU",
+    "Name": "san99tiago.com."
+  }
+}
