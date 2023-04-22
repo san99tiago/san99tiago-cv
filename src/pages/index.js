@@ -145,7 +145,7 @@ const Home = () => (
                 </BioSection>
                 <BioSection>
                     <BioYear>Technical</BioYear>
-                    Git, AWS (see details below), Terraform, Docker, Kubernetes, Linux Distributions, GitLab CI,Azure DevOps, Jenkins, SonarQube, SQL, No-SQL, IBM WAS, IBM MQ, Packer, OWASP, MetaSploit, Wireshark, Netcat, IoT, LaTex.
+                    Git, AWS (see details below), Terraform, Docker, Kubernetes, Linux Distributions, GitLab CI, Azure DevOps, Jenkins, SonarQube, SQL, No-SQL, IBM WAS, IBM MQ, Packer, OWASP, MetaSploit, Wireshark, Netcat, IoT, LaTex.
                 </BioSection>
                 <BioSection>
                     <BioYear>AWS Experience</BioYear>

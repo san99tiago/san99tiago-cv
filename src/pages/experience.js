@@ -29,7 +29,7 @@ const Experience = () => (
                         Serverless Category (2023-present)
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.5}>
+                <Section>
                     <WorkGridItem
                         id="cool-projects"
                         title="Awesome PoCs and Software for Others"
@@ -38,7 +38,7 @@ const Experience = () => (
                         My Free Time (2017-present)
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.5}>
+                <Section>
                     <WorkGridItem
                         id="baxter-bon-appetit"
                         title="Baxter Bon Appetit, Assisted Robotics"
@@ -75,7 +75,7 @@ const Experience = () => (
                         Bancolombia (2021-2022)
                     </WorkGridItem>
                 </Section>
-                <Section delay={0.2}>
+                <Section delay={0.1}>
                     <WorkGridItem
                         id="pragma"
                         title="DevOps Engineer"
