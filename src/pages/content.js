@@ -24,7 +24,7 @@ const Content = () => (
                 Latest Content
             </Heading>
 
-            <Section delay={0.1}>
+            <Section>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <GridItem
                         title="Tutorial AWS CDK Nivel 1: Despliegue de AWS LAMBDA con Infrastructura como Código (IaC)"
@@ -39,7 +39,7 @@ const Content = () => (
                 </SimpleGrid>
             </Section>
 
-            <Section delay={0.3}>
+            <Section delay={0.1}>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <GridItem
                         title="Aplicación Sencilla de FLASK (Python) con Frontend y Backend"
@@ -54,7 +54,7 @@ const Content = () => (
                 </SimpleGrid>
             </Section>
 
-            <Section delay={0.7}>
+            <Section delay={0.2}>
                 <SimpleGrid columns={[1, 2, 2]} gap={6}>
                     <GridItem
                         title="Creación de Interfaces MULTI-PÁGINA con Tkinter en Python"
