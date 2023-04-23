@@ -22,7 +22,7 @@ export class CdkStaticWebsiteHostingStack extends Stack {
 
     // Main variables based on environment variables and fixed values
     const hostedZoneName = deploymentEnvironment == 'prod' ? 'san99tiago.com' : `${deploymentEnvironment}.san99tiago.com`;
-    const domainName = `cv.${hostedZoneName}`;
+    const domainName = hostedZoneName;  // If prefix needed, add it here (eg: `cv.${hostedZoneName}`)
     const mainBucketName = domainName;
     const bucketVersioningEnabled = deploymentEnvironment == 'prod' ? true : false;
 
@@ -83,32 +83,32 @@ export class CdkStaticWebsiteHostingStack extends Stack {
     const responseHeaderPolicy = new cloudfront.ResponseHeadersPolicy(this, 'SecurityHeadersResponseHeaderPolicy', {
       comment: 'Security headers response header policy',
       securityHeadersBehavior: {
-        contentSecurityPolicy: {
-          override: true,
-          contentSecurityPolicy: "default-src 'self'"
-        },
         strictTransportSecurity: {
           override: true,
           accessControlMaxAge: Duration.days(2 * 365),
           includeSubdomains: true,
-          preload: true
+          preload: true,
         },
         contentTypeOptions: {
-          override: true
-        },
-        referrerPolicy: {
           override: true,
-          referrerPolicy: cloudfront.HeadersReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN
+        },
+        frameOptions: {
+          override: true,
+          frameOption: cloudfront.HeadersFrameOption.DENY,
         },
         xssProtection: {
           override: true,
           protection: true,
-          modeBlock: true
+          modeBlock: true,
         },
-        frameOptions: {
+        referrerPolicy: {
           override: true,
-          frameOption: cloudfront.HeadersFrameOption.DENY
-        }
+          referrerPolicy: cloudfront.HeadersReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN,
+        },
+        contentSecurityPolicy: {
+          override: true,
+          contentSecurityPolicy: "default-src https: data: 'unsafe-inline'; script-src 'self' 'unsafe-inline'",
+        },
       }
     });
 
@@ -127,7 +127,7 @@ export class CdkStaticWebsiteHostingStack extends Stack {
           eventType: cloudfront.FunctionEventType.VIEWER_REQUEST
         }],
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-        // responseHeadersPolicy: responseHeaderPolicy
+        responseHeadersPolicy: responseHeaderPolicy
       },
       errorResponses: [
         {
