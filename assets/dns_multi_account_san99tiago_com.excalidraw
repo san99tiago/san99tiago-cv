@@ -1,0 +1,1258 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "oGgkK5vyUjylaa5I5QoEi",
+      "type": "rectangle",
+      "x": 465.9739074707031,
+      "y": 95.75758022732202,
+      "width": 278.96109008789057,
+      "height": 237.22946506076394,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 551381786,
+      "version": 692,
+      "versionNonce": 1413735622,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "7LbvyVRKZ8A01dL5Nphp4",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "_wilUSPJfw6_NFW1qgKSl",
+      "type": "rectangle",
+      "x": 497.7779642740885,
+      "y": 143.145741780599,
+      "width": 210,
+      "height": 82,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#228be6",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1296061446,
+      "version": 567,
+      "versionNonce": 1844327066,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "bmQB57Xc-wmJivZKpzNV6"
+        },
+        {
+          "id": "Qcol2Gd-3XGAIvVI-kmDE",
+          "type": "arrow"
+        },
+        {
+          "id": "rPGW4DgLSVOVOD4KYDRCV",
+          "type": "arrow"
+        },
+        {
+          "id": "aDoxyUXMdv97uYzeUUMPJ",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "bmQB57Xc-wmJivZKpzNV6",
+      "type": "text",
+      "x": 513.118044535319,
+      "y": 159.145741780599,
+      "width": 179.31983947753906,
+      "height": 50,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1518169946,
+      "version": 544,
+      "versionNonce": 1429691398,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false,
+      "text": "Registered Domain\nsan99tiago.com",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "baseline": 43,
+      "containerId": "_wilUSPJfw6_NFW1qgKSl",
+      "originalText": "Registered Domain\nsan99tiago.com",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Tm5nwksy-sJWynDjglcTU",
+      "type": "text",
+      "x": 489.0087415907119,
+      "y": 109.57720777723523,
+      "width": 225.51988220214844,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 366538842,
+      "version": 187,
+      "versionNonce": 1780601882,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false,
+      "text": "AWS  ROOT ACCOUNT",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 18,
+      "containerId": null,
+      "originalText": "AWS  ROOT ACCOUNT",
+      "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle",
+      "version": 1020,
+      "versionNonce": 163856602,
+      "isDeleted": false,
+      "id": "kxpULNBLhWGt4kcrLfClJ",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 754.4806060791016,
+      "y": 476.8961944580078,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "width": 278.96109008789057,
+      "height": 141.29867553710938,
+      "seed": 551381786,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "4Y5pXqUA9cj9BI5X8TRwg",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "rectangle",
+      "version": 1123,
+      "versionNonce": 1480540506,
+      "isDeleted": false,
+      "id": "a9nBHZ3CKdyW30xxmDnFG",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 789.8054351806641,
+      "y": 516.261227077908,
+      "strokeColor": "#000000",
+      "backgroundColor": "#82c91e",
+      "width": 210,
+      "height": 82,
+      "seed": 1296061446,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "Uax3iGIAEOOwinImFMhUg"
+        },
+        {
+          "id": "4Y5pXqUA9cj9BI5X8TRwg",
+          "type": "arrow"
+        },
+        {
+          "id": "HcZXhEMdA1ci-xC_qVIPW",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100230377,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 1127,
+      "versionNonce": 110110746,
+      "isDeleted": false,
+      "id": "Uax3iGIAEOOwinImFMhUg",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 802.035514831543,
+      "y": 532.261227077908,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 185.5398406982422,
+      "height": 50,
+      "seed": 1518169946,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1682100222435,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Hosted Zone \ndev.san99tiago.com",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "a9nBHZ3CKdyW30xxmDnFG",
+      "originalText": "Hosted Zone dev.san99tiago.com",
+      "lineHeight": 1.25,
+      "baseline": 43
+    },
+    {
+      "type": "text",
+      "version": 787,
+      "versionNonce": 354298118,
+      "isDeleted": false,
+      "id": "Ui_PEEURTez0VC9XcFQ9r",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 793.2730560302734,
+      "y": 486.1559600830078,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 206.25990295410156,
+      "height": 25,
+      "seed": 366538842,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "AWS  DEV ACCOUNT",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "AWS  DEV ACCOUNT",
+      "lineHeight": 1.25,
+      "baseline": 18
+    },
+    {
+      "type": "rectangle",
+      "version": 1181,
+      "versionNonce": 1010683418,
+      "isDeleted": false,
+      "id": "4hUS86qbkdYzs4FJ-KIML",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 292.81273227267786,
+      "y": 485.8991156684028,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "width": 278.96109008789057,
+      "height": 141.29867553710938,
+      "seed": 551381786,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "id": "rPGW4DgLSVOVOD4KYDRCV",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100125738,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "rectangle",
+      "version": 1259,
+      "versionNonce": 1378858010,
+      "isDeleted": false,
+      "id": "H90LK91z3toPIRuNx-_ov",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 328.13756137424036,
+      "y": 525.8413713243274,
+      "strokeColor": "#000000",
+      "backgroundColor": "#82c91e",
+      "width": 210,
+      "height": 82,
+      "seed": 1296061446,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "ohrKKu6oAeUMLbnkacFEI"
+        },
+        {
+          "id": "4Y5pXqUA9cj9BI5X8TRwg",
+          "type": "arrow"
+        },
+        {
+          "id": "qDw35mQ35bOIkzgshlpay",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100224502,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 1261,
+      "versionNonce": 1894298246,
+      "isDeleted": false,
+      "id": "ohrKKu6oAeUMLbnkacFEI",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 359.4976230197482,
+      "y": 541.8413713243274,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 147.27987670898438,
+      "height": 50,
+      "seed": 1518169946,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1682100224502,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Hosted Zone \nsan99tiago.com",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "H90LK91z3toPIRuNx-_ov",
+      "originalText": "Hosted Zone san99tiago.com",
+      "lineHeight": 1.25,
+      "baseline": 43
+    },
+    {
+      "type": "text",
+      "version": 953,
+      "versionNonce": 246513222,
+      "isDeleted": false,
+      "id": "JFHqj83UosJ9-zScyUJgd",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 321.73494296603724,
+      "y": 499.31479560004345,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 213.73988342285156,
+      "height": 25,
+      "seed": 366538842,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1682100125738,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "AWS PROD ACCOUNT",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "AWS PROD ACCOUNT",
+      "lineHeight": 1.25,
+      "baseline": 18
+    },
+    {
+      "id": "Qcol2Gd-3XGAIvVI-kmDE",
+      "type": "arrow",
+      "x": 711.7461547851561,
+      "y": 157.39252853990337,
+      "width": 70.23111131456164,
+      "height": 19.265782676428273,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1849936262,
+      "version": 1433,
+      "versionNonce": 939161498,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100459714,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70.23111131456164,
+          -19.265782676428273
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "_wilUSPJfw6_NFW1qgKSl",
+        "focus": 0.07512126993314049,
+        "gap": 3.9681905110676325
+      },
+      "endBinding": {
+        "elementId": "i2WXPYSEvb7YoV4Sa3Hs4",
+        "focus": 0.7714698099567131,
+        "gap": 10.545450846354186
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "i2WXPYSEvb7YoV4Sa3Hs4",
+      "type": "text",
+      "x": 792.522716946072,
+      "y": 110.70702701144756,
+      "width": 333.57977294921875,
+      "height": 123.14151332410795,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 104142662,
+      "version": 860,
+      "versionNonce": 176677594,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "Qcol2Gd-3XGAIvVI-kmDE",
+          "type": "arrow"
+        },
+        {
+          "id": "2eGzYfLBWM9VW4gNuw9RK",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100459714,
+      "link": null,
+      "locked": false,
+      "text": "2. Get a default hosted zone\n\"san99tiago.com\" (default).\nBut we will delete it soon, as we \nwill end up using the one on the\nPROD ACCOUNT after step 4.",
+      "fontSize": 19.70264213185727,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 116,
+      "containerId": null,
+      "originalText": "2. Get a default hosted zone\n\"san99tiago.com\" (default).\nBut we will delete it soon, as we \nwill end up using the one on the\nPROD ACCOUNT after step 4.",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "l7ZoQEUyujRmc_6cEwGfN",
+      "type": "text",
+      "x": 132.29591200086813,
+      "y": 369.7416636149088,
+      "width": 324.75970458984375,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 68956826,
+      "version": 586,
+      "versionNonce": 1154995526,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "qDw35mQ35bOIkzgshlpay",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100135091,
+      "link": null,
+      "locked": false,
+      "text": "3. Create a Public Hosted Zone\nwith same name as the ROOT \nACCOUNT. This account will \nmanage officially the DNS setup.",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 93,
+      "containerId": null,
+      "originalText": "3. Create a Public Hosted Zone\nwith same name as the ROOT \nACCOUNT. This account will \nmanage officially the DNS setup.",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "rPGW4DgLSVOVOD4KYDRCV",
+      "type": "arrow",
+      "x": 516.7340315443626,
+      "y": 478.49376886593456,
+      "width": 70.04133338355507,
+      "height": 270.1242976338381,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1827393050,
+      "version": 1187,
+      "versionNonce": 989425286,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100132351,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -70.04133338355507,
+          -206.82139032589544
+        ],
+        [
+          -21.953923483814492,
+          -270.1242976338381
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "4hUS86qbkdYzs4FJ-KIML",
+        "focus": 0.6785197392876251,
+        "gap": 7.405346802468273
+      },
+      "endBinding": {
+        "elementId": "_wilUSPJfw6_NFW1qgKSl",
+        "focus": 0.6580953616412248,
+        "gap": 2.9978562135404445
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "ukCUErdS7K4nn-RTal4mE",
+      "type": "text",
+      "x": 509.79624260796425,
+      "y": 381.7444873385959,
+      "width": 558.6596069335938,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 248288154,
+      "version": 773,
+      "versionNonce": 1159658074,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "rPGW4DgLSVOVOD4KYDRCV",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100462889,
+      "link": null,
+      "locked": false,
+      "text": "4. Update the ROOT ACCOUNT \"Registered Domain\" for\n\"san99tiago.com\" pointing to the Name Serves (NS) from\nthe PROD ACCOUNT (so the DNS is managed there)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 68,
+      "containerId": null,
+      "originalText": "4. Update the ROOT ACCOUNT \"Registered Domain\" for\n\"san99tiago.com\" pointing to the Name Serves (NS) from\nthe PROD ACCOUNT (so the DNS is managed there)",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "A-yiGyEJbvYPEFuhbkEgS",
+      "type": "text",
+      "x": 184.35615709092883,
+      "y": 171.94222683376736,
+      "width": 207.4398651123047,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 255375110,
+      "version": 576,
+      "versionNonce": 159959686,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "aDoxyUXMdv97uYzeUUMPJ",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100427282,
+      "link": null,
+      "locked": false,
+      "text": "1. Buy the domain in\nthe ROOT ACCOUNT\n\"san99tiago.com\".",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 68,
+      "containerId": null,
+      "originalText": "1. Buy the domain in\nthe ROOT ACCOUNT\n\"san99tiago.com\".",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "fLXRQg0rMyHnUuyNOknIV",
+      "type": "text",
+      "x": 754.4616427951388,
+      "y": 659.1328870985244,
+      "width": 378.69964599609375,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1726738202,
+      "version": 468,
+      "versionNonce": 452007302,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "HcZXhEMdA1ci-xC_qVIPW",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100328717,
+      "link": null,
+      "locked": false,
+      "text": "5. Create a Public Hosted Zone for\nour Subdomain at our DEV ACCOUNT,\nthat has a desired prefix (like \"dev.\").\nCopy the output NS values.",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 93,
+      "containerId": null,
+      "originalText": "5. Create a Public Hosted Zone for\nour Subdomain at our DEV ACCOUNT,\nthat has a desired prefix (like \"dev.\").\nCopy the output NS values.",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "HcZXhEMdA1ci-xC_qVIPW",
+      "type": "arrow",
+      "x": 864.6525304963847,
+      "y": 652.5181545681424,
+      "width": 30.927028804482802,
+      "height": 48.13859388563378,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1434772294,
+      "version": 940,
+      "versionNonce": 1484813510,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100328718,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          30.927028804482802,
+          -48.13859388563378
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "fLXRQg0rMyHnUuyNOknIV",
+        "focus": -0.5218936890851287,
+        "gap": 6.614732530381957
+      },
+      "endBinding": {
+        "elementId": "a9nBHZ3CKdyW30xxmDnFG",
+        "focus": -0.23637500946577866,
+        "gap": 6.118333604600707
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "4Y5pXqUA9cj9BI5X8TRwg",
+      "type": "arrow",
+      "x": 786.818115234375,
+      "y": 558.2156704290775,
+      "width": 242.65511745876745,
+      "height": 18.390326757984212,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 705811290,
+      "version": 331,
+      "versionNonce": 662467014,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100224502,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -242.65511745876745,
+          18.390326757984212
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "a9nBHZ3CKdyW30xxmDnFG",
+        "focus": 0.15135746355031063,
+        "gap": 2.9873199462890625
+      },
+      "endBinding": {
+        "elementId": "H90LK91z3toPIRuNx-_ov",
+        "focus": 0.37132056977927325,
+        "gap": 6.0254364013671875
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "JZhOXn94Q3dMX55Q08OMy",
+      "type": "text",
+      "x": 298.13553873697913,
+      "y": 643.3044976128472,
+      "width": 353.03973388671875,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1669102938,
+      "version": 400,
+      "versionNonce": 30774726,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100336331,
+      "link": null,
+      "locked": false,
+      "text": "6. Add a \"NS\" record in our PROD\nACCOUNT with \"dev.san99tiago.com\"\nand  has the NS values from the\nprevious step.",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 93,
+      "containerId": null,
+      "originalText": "6. Add a \"NS\" record in our PROD\nACCOUNT with \"dev.san99tiago.com\"\nand  has the NS values from the\nprevious step.",
+      "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle",
+      "version": 1257,
+      "versionNonce": 800621146,
+      "isDeleted": false,
+      "id": "LoWEewjMyU-7a-Qc1p9u4",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 499.67236667209204,
+      "y": 231.84123569064673,
+      "strokeColor": "#000000",
+      "backgroundColor": "#82c91e",
+      "width": 210,
+      "height": 82,
+      "seed": 1296061446,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "UAz1QXYL86SFPz0r_L6Ne"
+        },
+        {
+          "id": "2eGzYfLBWM9VW4gNuw9RK",
+          "type": "arrow"
+        },
+        {
+          "id": "rPGW4DgLSVOVOD4KYDRCV",
+          "type": "arrow"
+        },
+        {
+          "id": "lLVrmk7aGJgfgLSYCfvOa",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100412216,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 1258,
+      "versionNonce": 1476104198,
+      "isDeleted": false,
+      "id": "UAz1QXYL86SFPz0r_L6Ne",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 531.0324283175999,
+      "y": 247.84123569064673,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 147.27987670898438,
+      "height": 50,
+      "seed": 1518169946,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1682100122045,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Hosted Zone \nsan99tiago.com",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "LoWEewjMyU-7a-Qc1p9u4",
+      "originalText": "Hosted Zone san99tiago.com",
+      "lineHeight": 1.25,
+      "baseline": 43
+    },
+    {
+      "id": "aDoxyUXMdv97uYzeUUMPJ",
+      "type": "arrow",
+      "x": 404.8653954399957,
+      "y": 193.99262506120698,
+      "width": 89.73481411404077,
+      "height": 4.098663433759839,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 784014234,
+      "version": 382,
+      "versionNonce": 1683589574,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100427283,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          89.73481411404077,
+          -4.098663433759839
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "A-yiGyEJbvYPEFuhbkEgS",
+        "focus": -0.23948461753417125,
+        "gap": 13.069373236762203
+      },
+      "endBinding": {
+        "elementId": "_wilUSPJfw6_NFW1qgKSl",
+        "focus": -0.017625370547458163,
+        "gap": 3.1777547200520075
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "2eGzYfLBWM9VW4gNuw9RK",
+      "type": "arrow",
+      "x": 782.8398793538411,
+      "y": 214.97241058514908,
+      "width": 71.78947448730457,
+      "height": 44.5925054694643,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 341821594,
+      "version": 597,
+      "versionNonce": 1807512666,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100459714,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -71.78947448730457,
+          44.5925054694643
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "i2WXPYSEvb7YoV4Sa3Hs4",
+        "focus": 0.40069361167159756,
+        "gap": 9.682837592230896
+      },
+      "endBinding": {
+        "elementId": "LoWEewjMyU-7a-Qc1p9u4",
+        "focus": 0.4970851372011598,
+        "gap": 1.378038194444457
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "qDw35mQ35bOIkzgshlpay",
+      "type": "arrow",
+      "x": 202.8282588669978,
+      "y": 477.1558787027994,
+      "width": 119.7661998189831,
+      "height": 88.41673370954385,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1605761926,
+      "version": 392,
+      "versionNonce": 1913714074,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100224502,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          14.715659318766228,
+          39.82686360677093
+        ],
+        [
+          119.7661998189831,
+          88.41673370954385
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "l7ZoQEUyujRmc_6cEwGfN",
+        "focus": 0.6251522454658324,
+        "gap": 7.414215087890568
+      },
+      "endBinding": {
+        "elementId": "H90LK91z3toPIRuNx-_ov",
+        "focus": -0.5566995905098703,
+        "gap": 5.5431026882594665
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "ieuHfgcQ74lgXoj9yubUb",
+      "type": "text",
+      "x": 790.4011603461373,
+      "y": 277.5743086073131,
+      "width": 371.79974365234375,
+      "height": 75,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1783937606,
+      "version": 207,
+      "versionNonce": 1574978970,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "lLVrmk7aGJgfgLSYCfvOa",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1682100412216,
+      "link": null,
+      "locked": false,
+      "text": "7. If needed, delete the Hosted\nZone in ROOT ACCOUNT, because\nit is now managed in PROD ACCOUNT",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 68,
+      "containerId": null,
+      "originalText": "7. If needed, delete the Hosted\nZone in ROOT ACCOUNT, because\nit is now managed in PROD ACCOUNT",
+      "lineHeight": 1.25
+    },
+    {
+      "id": "lLVrmk7aGJgfgLSYCfvOa",
+      "type": "arrow",
+      "x": 780.8918830023873,
+      "y": 324.2698991563584,
+      "width": 68.1097412109375,
+      "height": 35.786471896701414,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 368204358,
+      "version": 46,
+      "versionNonce": 593754374,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100412216,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -68.1097412109375,
+          -35.786471896701414
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "ieuHfgcQ74lgXoj9yubUb",
+        "focus": -0.827573121368404,
+        "gap": 9.509277343749943
+      },
+      "endBinding": {
+        "elementId": "LoWEewjMyU-7a-Qc1p9u4",
+        "focus": -0.4280073317472301,
+        "gap": 3.109775119357778
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "AcVBR9d_Q7ObouqE508dX",
+      "type": "text",
+      "x": 171.82923525855654,
+      "y": 40.934413849361206,
+      "width": 897.2576865128106,
+      "height": 41.76326686314173,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fd7e14",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1444129754,
+      "version": 244,
+      "versionNonce": 480561606,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1682100516199,
+      "link": null,
+      "locked": false,
+      "text": "MULTI-ACCOUNT  DNS  SETUP FOR SAN99TIAGO.COM",
+      "fontSize": 34.802722385951434,
+      "fontFamily": 3,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 33.000000000000014,
+      "containerId": null,
+      "originalText": "MULTI-ACCOUNT  DNS  SETUP FOR SAN99TIAGO.COM",
+      "lineHeight": 1.2
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
