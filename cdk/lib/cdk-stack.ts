@@ -76,7 +76,7 @@ export class CdkStaticWebsiteHostingStack extends Stack {
     const rewriteFunction = new cloudfront.Function(this, 'Function', {
       comment: 'Function to rewrite urls with complaint html files of NextJS files',
       functionName: `${mainResourcesName}-url-rewrite-cloudfront`,
-      code: cloudfront.FunctionCode.fromFile({ filePath: '../lambda/url-rewrite.js' }),
+      code: cloudfront.FunctionCode.fromFile({ filePath: '../cloudfront_functions/src/url-rewrite.js' }),
     });
 
     // Add CloudFront extra security headers

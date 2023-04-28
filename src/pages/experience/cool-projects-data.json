@@ -12,6 +12,12 @@
     "url": "https://github.com/san99tiago/terraform-playground"
   },
   {
+    "title": "AWS Transactional Messages App",
+    "description": "Serverless AWS architecture to simulate the processing of transactional 'messages' with Observability in place.",
+    "technologies": "AWS, API Gateway, SQS, SQS-DLQ, Lambda, LambdaPowerTools, X-Ray, SNS, CDK, DevOps.",
+    "url": "https://github.com/san99tiago/aws-cdk-transactional-messages"
+  },
+  {
     "title": "AWS Medical Providers Automation",
     "description": "Automation that weekly downloads and updates medical records for different datasets.",
     "technologies": "AWS, Lambda, EventBridge, SES, S3, CDK, DevOps.",
