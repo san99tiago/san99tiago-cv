@@ -158,29 +158,34 @@ const Home = () => (
                     Education & Experience
                 </Heading>
                 <BioSection>
-                    <BioYear>2022-present</BioYear>
+                    <BioYear>2023-present</BioYear>
+                    Lead Systems Engineer (DevOps)
+                    <a href="https://www.epam.com" target="_blank"><b> @ EPAM Systems</b></a>
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022-2023</BioYear>
                     Senior Systems Engineer (DevOps)
-                    EPAM Systems
+                    <a href="https://www.epam.com" target="_blank"><b> @ EPAM Systems</b></a>
                 </BioSection>
                 <BioSection>
                     <BioYear>2022-present</BioYear>
                     M.S. Cybersecurity
-                    IMF Smart Education
+                    <a href="https://www.imf-formacion.com" target="_blank"><b> @ IMF Smart Education</b></a>
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
                     Software Engineering Specialist (DevOps)
-                    Bancolombia
+                    <a href="https://www.grupobancolombia.com" target="_blank"><b> @ Bancolombia</b></a>
                 </BioSection>
                 <BioSection>
                     <BioYear>2021</BioYear>
                     DevOps Engineer
-                    PRAGMA
+                    <a href="https://www.pragma.co" target="_blank"><b> @ PRAGMA</b></a>
                 </BioSection>
                 <BioSection>
                     <BioYear>2017-2021</BioYear>
                     B.S. Mechatronics Engineering
-                    EIA University
+                    <a href="https://www.eia.edu.co" target="_blank"><b> @ EIA University</b></a>
                 </BioSection>
             </Section>
 

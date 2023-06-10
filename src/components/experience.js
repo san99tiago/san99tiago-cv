@@ -39,6 +39,11 @@ export const ExperienceSection = styled(Box)`
     text-indent: -1.5em;
     text-align: justify;
 `
+export const ExperienceSubSection = styled(Box)`
+    padding-left: 1.8em;
+    text-indent: -1.8em;
+    text-align: justify;
+`
 
 export const ExperienceEmphasis = styled.span`
     font-weight: bold;
