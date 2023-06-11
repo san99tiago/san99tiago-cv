@@ -53,12 +53,12 @@ export class CdkStaticWebsiteHostingStack extends Stack {
     // Add certificate
     // ! IMPORTANT: this is currently automatic, but if the R53 Hosted Zone is
     // ! ... in another account, this has to be done manually by DNS validation
-    const certificate = new acm.DnsValidatedCertificate(this, 'Certificate', {
+    const certificate = new acm.Certificate(this, 'Certificate', {
       domainName: domainName,
-      hostedZone: hostedZone,
       subjectAlternativeNames: [`www.${domainName}`],  // To also allow the common 'www' prefix
-      region: 'us-east-1',
-    });
+      validation: acm.CertificateValidation.fromDns(hostedZone),
+    })
+
     certificate.metricDaysToExpiry().createAlarm(this, 'AlarmCertificateExpiration', {
       comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
       evaluationPeriods: 1,

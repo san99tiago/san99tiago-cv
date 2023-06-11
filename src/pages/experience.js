@@ -8,7 +8,7 @@ import thumb_2018_01_01_experience_cool_projects from '../public/images/experien
 import thumb_2021_01_20_experience_pragma from '../public/images/experience/2021_01_20_experience_pragma.png'
 import thumb_2021_07_01_experience_bancolombia from '../public/images/experience/2021_07_01_experience_bancolombia.png'
 import thumb_2021_11_01_experience_eia from '../public/images/experience/2021_11_01_experience_eia.png'
-import thumb_2022_04_01_experience_epam from '../public/images/experience/2022_04_01_experience_epam.png'
+import thumb_2023_05_02_experience_epam from '../public/images/experience/2023_05_02_experience_epam.png'
 import thumb_2023_02_01_experience_aws_community_builder from '../public/images/experience/2023_02_01_experience_aws_community_builder.png'
 
 
@@ -60,8 +60,8 @@ const Experience = () => (
                 <Section delay={0.1}>
                     <WorkGridItem
                         id="epam-systems"
-                        title="Senior Systems Engineer"
-                        thumbnail={thumb_2022_04_01_experience_epam}
+                        title="Lead Systems Engineer"
+                        thumbnail={thumb_2023_05_02_experience_epam}
                         >
                         EPAM Systems (2022-present)
                     </WorkGridItem>
