@@ -28,4 +28,4 @@ headline "CDK Deployment..."
 cd ./cdk || exit
 echo "Deploying CDK solution from $(pwd)"
 
-cdk deploy
+cdk deploy --require-approval never
