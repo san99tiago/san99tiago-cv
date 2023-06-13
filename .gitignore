@@ -2,6 +2,7 @@
 # OWN IGNORES
 ################################################################################
 temp.*
+.DS_Store
 
 # NextJs/React ignores
 node_modules
