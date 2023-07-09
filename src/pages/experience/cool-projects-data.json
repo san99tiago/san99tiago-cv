@@ -6,16 +6,28 @@
     "url": "https://github.com/san99tiago/docker-pirate"
   },
   {
-    "title": "Terraform Playground",
-    "description": "Fun infrastructure solutions and PoCs to explore Terraform concepts and deployments in AWS.",
-    "technologies": "AWS, Terraform, IaC, DevOps.",
-    "url": "https://github.com/san99tiago/terraform-playground"
+    "title": "AWS ECS Custom Built API",
+    "description": "Container-based AWS solution on top of FastAPI. DNS managed with Route 53 for a multi-account setup.",
+    "technologies": "AWS, ECS, ECR, Route53, ACM, FastAPI, Docker, CDK, DevOps.",
+    "url": "https://github.com/san99tiago/aws-cdk-ecs-api"
   },
   {
     "title": "AWS Transactional Messages App",
     "description": "Serverless AWS architecture to simulate the processing of transactional 'messages' with Observability in place.",
     "technologies": "AWS, API Gateway, SQS, SQS-DLQ, Lambda, LambdaPowerTools, X-Ray, SNS, CDK, DevOps.",
     "url": "https://github.com/san99tiago/aws-cdk-transactional-messages"
+  },
+  {
+    "title": "Terraform Playground",
+    "description": "Fun infrastructure solutions and PoCs to explore Terraform concepts and deployments in AWS.",
+    "technologies": "AWS, Terraform, IaC, DevOps.",
+    "url": "https://github.com/san99tiago/terraform-playground"
+  },
+  {
+    "title": "AWS Lambda-Based FastAPI Deployment",
+    "description": "CDK template project with best FastAPI/Mangum practices for a FastAPI solution on top of Lambda Functions in AWS.",
+    "technologies": "AWS, Lambda, FastAPI, CDK, DevOps.",
+    "url": "https://github.com/san99tiago/aws-cdk-fastapi-lambda"
   },
   {
     "title": "AWS Medical Providers Automation",
