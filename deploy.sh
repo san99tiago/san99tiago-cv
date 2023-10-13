@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# SCRIPTS TO DEPLOY DEVELOPMENT ENVIRONMENT
+# SCRIPTS TO DEPLOY THE CDK SOLUTION
 # Santiago Garcia Arango Website (Portfolio)
 ################################################################################
 
@@ -24,8 +24,6 @@ export DEPLOYMENT_ENVIRONMENT=$1
 # ------------------------- CDK DEPLOYMENT -------------------------
 headline "CDK Deployment..."
 
-# Move to "cdk" folder (where the CDK config and deployment files are located)
-cd ./cdk || exit
 echo "Deploying CDK solution from $(pwd)"
 
 cdk deploy --require-approval never

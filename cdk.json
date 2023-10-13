@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/cdk.ts",
+  "app": "npx ts-node --prefer-ts-exts cdk/bin/cdk.ts",
   "context": {
     "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true
   }
