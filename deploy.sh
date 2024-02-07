@@ -24,6 +24,8 @@ export DEPLOYMENT_ENVIRONMENT=$1
 # ------------------------- CDK DEPLOYMENT -------------------------
 headline "CDK Deployment..."
 
+# Move to "cdk" folder (where the IaC is located)
+cd ./cdk || exit
 echo "Deploying CDK solution from $(pwd)"
 
 cdk deploy --require-approval never
