@@ -9,6 +9,10 @@ import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as route53targets from 'aws-cdk-lib/aws-route53-targets';
 
+// Get the absolute path for the NextJS application's output/export folder
+import path = require('path');
+const nextJsOutputFolderPath = path.resolve(__dirname, '..', '..', 'src/out');
+
 
 export class CdkStaticWebsiteHostingStack extends Stack {
   constructor(
@@ -39,9 +43,9 @@ export class CdkStaticWebsiteHostingStack extends Stack {
       removalPolicy: RemovalPolicy.DESTROY,
     });
 
-    // Add static files from the 'out' folder to the S3 bucket for the web-hosting capabilities
+    // Add static files from the NextJS "out" folder to the S3 for the web-hosting capabilities
     const _s3DeployFiles = new s3_deploy.BucketDeployment(this, 'BucketMainDeployFiles', {
-      sources: [s3_deploy.Source.asset('../src/out')],
+      sources: [s3_deploy.Source.asset(nextJsOutputFolderPath)],
       destinationBucket: mainBucket,
     });
 
