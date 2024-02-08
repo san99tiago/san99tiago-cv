@@ -3,12 +3,6 @@ name: deploy
 on:
   push:
     branches: [ 'main', 'develop']
-  workflow_dispatch:
-    inputs:
-      branches:
-        description: 'Branch reference'
-        required: true
-        default: 'develop'
 
 env:
   AWS_DEFAULT_REGION: us-east-1
@@ -27,7 +21,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-      - run: |
+      - name: Run Prettier and Lint
+        run: |
           npm ci
           npm run prettier-check
           npm run lint
@@ -42,8 +37,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-      - run: |
-          bash build
+      - name: Build NextJs App to Output folder
+        run: bash build.sh
       - name: Archive NextJS Output dir
         uses: actions/upload-artifact@v3
         with:
@@ -64,8 +59,7 @@ jobs:
         with:
           node-version: "20"
       - name: Install CDK
-        run: |
-          npm install -g aws-cdk
+        run: npm install -g aws-cdk
 
       # Same task with different secrets depending on the branch ref (dev vs prod deployments)
       # Note: there might be better alternatives, but this is a workaround to deploy to both envs
@@ -84,10 +78,7 @@ jobs:
           role-to-assume: arn:aws:iam::${{ secrets.PROD_AWS_ACCOUNT_ID }}:role/${{ secrets.PROD_AWS_DEPLOY_ROLE }}
           role-session-name: myGitHubActions
 
-      # Sample STS get caller identity for tests
-      - name: sts get-caller-identity
-        run: |
-          aws sts get-caller-identity
+      - run: aws sts get-caller-identity
 
       - name: CDK Synth
         run: |
