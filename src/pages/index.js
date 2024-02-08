@@ -157,7 +157,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>AWS Experience</BioYear>
-          [AWS Certified x2], IAM, CloudFormation, CDK, Organizations, Lambda,
+          [AWS Certified x4], IAM, CloudFormation, CDK, Organizations, Lambda,
           Lambda Layer, API Gateway, DynamoDB, CloudWatch, S3, CloudFront, Step
           Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2, EBS, EFS, ASG, VPC,
           Transit Gateway, IPAM, Athena, Glue, SSM, CodeBuild, CodePipeline, IAM
