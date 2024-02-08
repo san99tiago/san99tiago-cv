@@ -84,15 +84,17 @@ jobs:
 
       - run: aws sts get-caller-identity
 
+      # Not 100% optimal, but does the work for setting deployment environments from branch
       - name: Setup Deployment Environment from Branch
         run: |
           # To update the deployment environment based on the git branch
           if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
             echo "DEPLOYMENT_ENVIRONMENT=prod" >> "$GITHUB_ENV"
+            echo "Deployment environment is PROD"
           else
             echo "DEPLOYMENT_ENVIRONMENT=dev" >> "$GITHUB_ENV"
+            echo "Deployment environment is DEV"
           fi
-          echo "Deployment environment is: $DEPLOYMENT_ENVIRONMENT"
 
       - name: CDK Synth
         run: |
@@ -185,15 +187,18 @@ jobs:
           name: nextjs-output-dir
           path: ./src/out
 
-      # NOTE: for now no manual approvals are required
-      - name: Deploy to AWS
+      # Not 100% optimal, but does the work for setting deployment environments from branch
+      - name: Setup Deployment Environment from Branch
         run: |
           # To update the deployment environment based on the git branch
           if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
             echo "DEPLOYMENT_ENVIRONMENT=prod" >> "$GITHUB_ENV"
+            echo "Deployment environment is PROD"
           else
             echo "DEPLOYMENT_ENVIRONMENT=dev" >> "$GITHUB_ENV"
+            echo "Deployment environment is DEV"
           fi
-          echo "Deployment environment is: $DEPLOYMENT_ENVIRONMENT"
-          # Main deployment scripts
-          bash deploy.sh $DEPLOYMENT_ENVIRONMENT
+
+      # NOTE: for now no manual approvals are required
+      - name: Deploy to AWS
+        run: bash deploy.sh $DEPLOYMENT_ENVIRONMENT
