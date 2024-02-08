@@ -23,6 +23,7 @@ jobs:
           node-version: "20"
       - name: Run Prettier and Lint
         run: |
+          cd src
           npm ci
           npm run prettier-check
           npm run lint
