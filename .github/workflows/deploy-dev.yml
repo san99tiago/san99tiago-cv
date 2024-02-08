@@ -55,10 +55,18 @@ jobs:
       contents: read  # This is required for actions/checkout
     steps:
       - uses: actions/checkout@v3
+
+      - name: Dowload NextJS output folder
+        uses: actions/download-artifact@v3
+        with:
+          name: nextjs-output-dir
+          path: ./src/out
+
       - name: Set up NodeJs
         uses: actions/setup-node@v3
         with:
           node-version: "20"
+
       - name: Install CDK and Modules
         run: |
           npm install -g aws-cdk
@@ -153,6 +161,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Dowload NextJS output folder
+        uses: actions/download-artifact@v3
+        with:
+          name: nextjs-output-dir
+          path: ./src/out
+
       - name: Set up NodeJs
         uses: actions/setup-node@v3
         with:
@@ -180,12 +194,6 @@ jobs:
           aws-region: ${{ env.AWS_DEFAULT_REGION }}
           role-to-assume: arn:aws:iam::${{ secrets.PROD_AWS_ACCOUNT_ID }}:role/${{ secrets.PROD_AWS_DEPLOY_ROLE }}
           role-session-name: myGitHubActions
-
-      - name: Dowload NextJS output folder
-        uses: actions/download-artifact@v3
-        with:
-          name: nextjs-output-dir
-          path: ./src/out
 
       # Not 100% optimal, but does the work for setting deployment environments from branch
       - name: Setup Deployment Environment from Branch

@@ -13,7 +13,6 @@ import * as route53targets from 'aws-cdk-lib/aws-route53-targets';
 import path = require('path');
 const nextJsOutputFolderPath = path.resolve(__dirname, '..', '..', 'src/out');
 
-console.log("PATH: ", nextJsOutputFolderPath)
 
 export class CdkStaticWebsiteHostingStack extends Stack {
   constructor(
