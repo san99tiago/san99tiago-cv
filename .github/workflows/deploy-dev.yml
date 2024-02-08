@@ -59,8 +59,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-      - name: Install CDK
-        run: npm install -g aws-cdk
+      - name: Install CDK and Modules
+        run: |
+          npm install -g aws-cdk
+          npm ci
 
       # Same task with different secrets depending on the branch ref (dev vs prod deployments)
       # Note: there might be better alternatives, but this is a workaround to deploy to both envs
@@ -72,7 +74,7 @@ jobs:
           role-to-assume: arn:aws:iam::${{ secrets.DEV_AWS_ACCOUNT_ID }}:role/${{ secrets.DEV_AWS_DEPLOY_ROLE }}
           role-session-name: myGitHubActions
       - name: Configure AWS Credentials (PROD)
-        if: github.ref != 'refs/heads/main'
+        if: github.ref == 'refs/heads/main'
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ${{ env.AWS_DEFAULT_REGION }}
@@ -143,8 +145,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install CDK
-        run: npm install -g aws-cdk
+      - name: Install CDK and Modules
+        run: |
+          npm install -g aws-cdk
+          npm ci
 
       # Same task with different secrets depending on the branch ref (dev vs prod deployments)
       # Note: there might be better alternatives, but this is a workaround to deploy to both envs
