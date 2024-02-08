@@ -119,8 +119,8 @@ jobs:
         with:
           name: cdk-synth-folder
           path: |
-            ./cdk.out
-            !./cdk.out/asset.*
+            ./cdk/cdk.out
+            !./cdk/cdk.out/asset.*
           retention-days: 1
 
   iac-checkov:
