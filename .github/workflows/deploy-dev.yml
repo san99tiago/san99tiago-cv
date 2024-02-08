@@ -84,6 +84,16 @@ jobs:
 
       - run: aws sts get-caller-identity
 
+      - name: Setup Deployment Environment from Branch
+        run: |
+          # To update the deployment environment based on the git branch
+          if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
+            echo "DEPLOYMENT_ENVIRONMENT=prod" >> "$GITHUB_ENV"
+          else
+            echo "DEPLOYMENT_ENVIRONMENT=dev" >> "$GITHUB_ENV"
+          fi
+          echo "Deployment environment is: $DEPLOYMENT_ENVIRONMENT"
+
       - name: CDK Synth
         run: |
           cd ./cdk
