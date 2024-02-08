@@ -7,7 +7,8 @@
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "build-export": "next build && next export",
-    "prettier": "prettier -write .",
+    "prettier-check": "prettier --check .",
+    "prettier-write": "prettier --write .",
     "lint": "next lint"
   },
   "keywords": [],
