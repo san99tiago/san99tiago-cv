@@ -137,7 +137,7 @@ jobs:
           path: ./cdk-synth-output-folder
 
       - name: Display files in the output folder
-        run: ls -lrta
+        run: tree
         working-directory: ./cdk-synth-output-folder
 
       - name: Run Checkov action
