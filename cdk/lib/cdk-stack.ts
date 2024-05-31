@@ -141,6 +141,7 @@ export class CdkStaticWebsiteHostingStack extends Stack {
         }
       ],
       enabled: true,
+      enableLogging: true,
     });
 
     // After distribution is ready, lets add an "A Record" in the R53 HZ for the

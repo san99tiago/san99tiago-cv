@@ -1,6 +1,6 @@
 {
   "name": "cdk-san99tiago-cv",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "bin": {
     "cdk": "bin/cdk.js"
   },
