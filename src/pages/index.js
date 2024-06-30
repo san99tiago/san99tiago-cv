@@ -2,7 +2,6 @@ import NextLink from 'next/link'
 import {
   Box,
   Button,
-  Divider,
   Container,
   Heading,
   Link,
@@ -11,7 +10,7 @@ import {
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Image from 'next/image'
 
 // Main components
@@ -89,10 +88,10 @@ const Home = () => (
         </Heading>
 
         <Paragraph>
-          As a curious Mechatronics Engineer, I&lsquo;m passionate about
-          creating cutting-edge software using event-driven architectures.
-          I&lsquo;m currently immersed in production-grade AWS workflows,
-          leveraging DevSecOps best practices to drive innovation.
+          As a curious DevOps Engineer, I&lsquo;m passionate about creating
+          cutting-edge software using event-driven architectures. I&lsquo;m
+          currently immersed in production-grade AWS workflows, leveraging
+          DevSecOps best practices to drive innovation.
         </Paragraph>
 
         <Box style={{ marginTop: '10px' }} />
@@ -145,8 +144,8 @@ const Home = () => (
         <BioSection>
           <BioYear>Methodologies</BioYear>
           CI/CD, Infrastructure as Code, DevSecOps, Event Driven Architectures,
-          TDD, SOLID, Design Patterns, Scrum, Clean Code, Static Code Analysis,
-          Pair Programming.
+          TDD, SOLID, Design Patterns, Automation, Clean Code, Static Code
+          Analysis, Pair Programming, Scrum,.
         </BioSection>
         <BioSection>
           <BioYear>Technical</BioYear>
@@ -158,10 +157,11 @@ const Home = () => (
         <BioSection>
           <BioYear>AWS Experience</BioYear>
           [AWS Certified x4], IAM, CloudFormation, CDK, Organizations, Lambda,
-          Lambda Layer, API Gateway, DynamoDB, CloudWatch, S3, CloudFront, Step
-          Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2, EBS, EFS, ASG, VPC,
-          Transit Gateway, IPAM, Athena, Glue, SSM, CodeBuild, CodePipeline, IAM
-          Identity Center, Control Tower, Chime.
+          Lambda Layer, EventBridge, API Gateway, DynamoDB, CloudWatch, S3,
+          CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2,
+          EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM,
+          CodeBuild, CodePipeline, IAM Identity Center (SSO), Control Tower,
+          Kinesis, Chime.
         </BioSection>
       </Section>
 
@@ -184,7 +184,7 @@ const Home = () => (
           </a>
         </BioSection>
         <BioSection>
-          <BioYear>2022-present</BioYear>
+          <BioYear>2022-2024</BioYear>
           M.S. Cybersecurity
           <a href="https://www.imf-formacion.com" target="_blank">
             <b> @ IMF Smart Education</b>
@@ -209,6 +209,29 @@ const Home = () => (
           B.S. Mechatronics Engineering
           <a href="https://www.eia.edu.co" target="_blank">
             <b> @ EIA University</b>
+          </a>
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Communities & Volunteering
+        </Heading>
+        <BioSection>
+          <BioYear>AWS User Group Medellin</BioYear>
+          Co-Organizer for the official AWS events and workshops in Medellin
+          <a href="https://www.meetup.com/aws-medellin/" target="_blank">
+            <b> @ Meetup AWS Medellin</b>
+          </a>
+        </BioSection>
+        <BioSection>
+          <BioYear>CloudCrafters</BioYear>
+          Core Team Member for a community of Cloud and DevOps enthusiasts
+          <a
+            href="https://wearecommunity.io/communities/cloudcrafters"
+            target="_blank"
+          >
+            <b> @ CloudCrafters Community</b>
           </a>
         </BioSection>
       </Section>
