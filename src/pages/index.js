@@ -49,7 +49,13 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Santiago Garcia Arango
           </Heading>
-          {<p> DevSecOps | AWS Community Builder | Serverless </p>}
+          {
+            <p>
+              {' '}
+              AWS UG Leader | AWS Community Builder | Cloud Architect
+              experienced in DevSecOps{' '}
+            </p>
+          }
         </Box>
         <Box
           flexShrink={0}
@@ -88,10 +94,10 @@ const Home = () => (
         </Heading>
 
         <Paragraph>
-          As a curious DevOps Engineer, I&lsquo;m passionate about creating
-          cutting-edge software using event-driven architectures. I&lsquo;m
-          currently immersed in production-grade AWS workflows, leveraging
-          DevSecOps best practices to drive innovation.
+          As a Solutions Architect experienced in DevOps, I&lsquo;m passionate
+          about creating cutting-edge software using event-driven architectures.
+          I&lsquo;m currently immersed in production-grade AWS workflows,
+          leveraging DevSecOps best practices to drive innovation.
         </Paragraph>
 
         <Box style={{ marginTop: '10px' }} />
@@ -138,8 +144,8 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>Languages</BioYear>
-          Python, JavaScript, TypeScript, Bash, HTML, CSS, GoLang, Java, SQL,
-          GraphQL, MATLAB, Arduino.
+          Python (Main), JavaScript, TypeScript, Bash, HTML, CSS, GoLang, Java,
+          SQL, GraphQL, MATLAB, Arduino.
         </BioSection>
         <BioSection>
           <BioYear>Methodologies</BioYear>
@@ -159,7 +165,7 @@ const Home = () => (
           [AWS Certified x4], IAM, CloudFormation, CDK, Organizations, Lambda,
           Lambda Layer, EventBridge, API Gateway, DynamoDB, CloudWatch, S3,
           CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2,
-          EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM,
+          Bedrock, EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM,
           CodeBuild, CodePipeline, IAM Identity Center (SSO), Control Tower,
           Kinesis, Chime.
         </BioSection>
@@ -218,15 +224,27 @@ const Home = () => (
           Communities & Volunteering
         </Heading>
         <BioSection>
-          <BioYear>AWS User Group Medellin</BioYear>
-          Co-Organizer for the official AWS events and workshops in Medellin
+          <BioYear>AWS UG Medellin Leader</BioYear>
+          AWS User Group Medellin Leader for official AWS events and workshops
+          in Medellin
           <a href="https://www.meetup.com/aws-medellin/" target="_blank">
             <b> @ Meetup AWS Medellin</b>
           </a>
         </BioSection>
         <BioSection>
-          <BioYear>CloudCrafters</BioYear>
-          Core Team Member for a community of Cloud and DevOps enthusiasts
+          <BioYear>AWS CB Serverless</BioYear>
+          AWS Community Builder for the Serverless Technologies
+          <a
+            href="https://aws.amazon.com/developer/community/community-builders/"
+            target="_blank"
+          >
+            <b> @ AWS Community Builders</b>
+          </a>
+        </BioSection>
+        <BioSection>
+          <BioYear>CloudCrafters Core Team</BioYear>
+          Core Organizer for CloudCrafters: community of Cloud and DevOps
+          enthusiasts in LATAM
           <a
             href="https://wearecommunity.io/communities/cloudcrafters"
             target="_blank"
