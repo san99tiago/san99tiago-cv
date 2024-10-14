@@ -53,7 +53,7 @@ const Home = () => (
             <p>
               {' '}
               AWS UG Leader | AWS Community Builder | Cloud Architect
-              experienced in DevSecOps{' '}
+              experienced in DevOps{' '}
             </p>
           }
         </Box>
