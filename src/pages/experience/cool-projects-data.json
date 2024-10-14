@@ -114,6 +114,18 @@
     "url": "https://github.com/san99tiago/aws-rekognition-demo"
   },
   {
+    "title": "Advanced JSON Mapper",
+    "description": "Robust JSON Mapper on top of Python by using 'jsonpathng' with JMESPath expressions. Exposed as an API via FastAPI.",
+    "technologies": "JSON, JSONPathNG, JMESPath, Python, Mapper, FastAPI.",
+    "url": "https://github.com/san99tiago/jsonpath-ng-experiments"
+  },
+  {
+    "title": "FastAPI Docker GitHub Actions CICD",
+    "description": "DEMO to create a CICD pipeline for FastAPI Docker Images on top of GitHub Actions",
+    "technologies": "FastAPI, Docker, GitHub Actions",
+    "url": "https://github.com/san99tiago/fastapi-docker-github-actions"
+  },
+  {
     "title": "AWS CDK Lambda Docker Templates",
     "description": "My own CDK template (simple pattern) for deploying AWS Lambda Functions on top of Docker images. It covers Python and NodeJs images.",
     "technologies": "AWS, CDK, Lambda, Docker, Python, NodeJs.",
