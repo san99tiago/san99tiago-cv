@@ -6,10 +6,64 @@
     "url": "https://github.com/san99tiago/docker-pirate"
   },
   {
+    "title": "AWS Recipe Book",
+    "description": "Advanced Serverless DEMO to illustrate a deployed on AWS with frontend, backend and chatbot microservices.",
+    "technologies": "AWS, Bedrock, Lambda, API-Gateway, Cognito, CDK, DynamoDB, Step Functions, Route 53, WAF, Shield.",
+    "url": "https://github.com/san99tiago/aws-recipe-book"
+  },
+  {
+    "title": "AWS Cybersecurity SIEM",
+    "description": "Advanced Cybersecurity SIEM/XDR solution designed for AWS Organizations with a multi-account architecture, integrating Wazuh Platform and IaC with AWS-CDK.",
+    "technologies": "AWS, SIEM, Wazuh, Organizations, SCPs, EC2, NLB, Linux, Security.",
+    "url": "https://github.com/san99tiago/aws-cybersecurity-siem"
+  },
+  {
+    "title": "AWS WhatsApp Chatbot",
+    "description": "WhatsApp Chatbot on AWS that enables the creation of a customized multi-modal personal assistant with Generative-AI, Agents and RAG.",
+    "technologies": "AWS, Chatbot, Bedrock, RAG, Agents, Step Functions, API Gateway, DynamoDB.",
+    "url": "https://github.com/san99tiago/aws-whatsapp-chatbot"
+  },
+  {
+    "title": "AWS Advanced Organizations CDK",
+    "description": "Advanced DEMO of managing AWS Organizations for multiple AWS Accounts with IaC on CDK-Python.",
+    "technologies": "AWS, Organizations, SCPs, OUs, CDK, CDK-Pepperize.",
+    "url": "https://github.com/san99tiago/aws-cdk-organizations-demo"
+  },
+  {
+    "title": "Advanced AWS TODO App",
+    "description": "Advanced Fullstack App built on AWS with Frontend on React and Backend with FastAPI on top of AWS API-Gateway, Lambda. IaC on CDK or Terraform.",
+    "technologies": "AWS, API Gateway, Lambda, DynamoDB, Cognito, S3, CloudFront, CDK, Terraform.",
+    "url": "https://github.com/san99tiago/aws-fastapi-todo-app"
+  },
+  {
+    "title": "AWS CDK Advanced Experiments",
+    "description": "Multiple advanced AWS CDK Experiments and Challenging isolated Projects to have fun in AWS.",
+    "technologies": "AWS CDK, Infrastructure as Code, Networking, EDA, Security, Databases, Machine Learning.",
+    "url": "https://github.com/san99tiago/aws-cdk-multiple-experiments"
+  },
+  {
+    "title": "AWS Terraform Multi-Layer App",
+    "description": "Demo on how to deploy a multi-layer application on AWS with Terraform, Ansible, GitHub Actions and EC2 instances.",
+    "technologies": "AWS, Terraform, NLB, EC2, RDS, Bastion Host.",
+    "url": "https://github.com/san99tiago/aws-terraform-multi-layer-app"
+  },
+  {
+    "title": "AWS Prime Video XRay Clone",
+    "description": "Clone 'for Amazon Prime Video X-Ray' functionality 100% OpenSource on AWS with Rekognition, Step Functions and Streamlit.",
+    "technologies": "AWS, CDK, Step Functions, Distributed Map, Rekognition, Bedrock, Lambda, S3",
+    "url": "https://github.com/san99tiago/aws-prime-video-xray-clone"
+  },
+  {
     "title": "AWS ECS Custom Built API",
     "description": "Container-based AWS solution on top of FastAPI. DNS managed with Route 53 for a multi-account setup.",
     "technologies": "AWS, ECS, ECR, Route53, ACM, FastAPI, Docker, CDK, DevOps.",
     "url": "https://github.com/san99tiago/aws-cdk-ecs-api"
+  },
+  {
+    "title": "AWS SonarQube",
+    "description": "Demo on how to deploy a SonarQube server on AWS on top of EC2, RDS and IaC on CDK.",
+    "technologies": "AWS, SonarQube, EC2, RDS, CDK.",
+    "url": "https://github.com/san99tiago/aws-sonarqube"
   },
   {
     "title": "AWS Transactional Messages App",
@@ -18,16 +72,28 @@
     "url": "https://github.com/san99tiago/aws-cdk-transactional-messages"
   },
   {
+    "title": "AWS Stocks Demo",
+    "description": "IaC DEMO to deploy an ETL and API to process Stock Prices with AWS and show the best practices on top of CDK.",
+    "technologies": "AWS, CDK, Lambda, DynamoDB, EventBridge, YahooFinance",
+    "url": "https://github.com/san99tiago/aws-iac-stocks-demo"
+  },
+  {
     "title": "Terraform Playground",
     "description": "Fun infrastructure solutions and PoCs to explore Terraform concepts and deployments in AWS.",
     "technologies": "AWS, Terraform, IaC, DevOps.",
     "url": "https://github.com/san99tiago/terraform-playground"
   },
   {
+    "title": "AWS CDK CTF",
+    "description": "Custom Capture the Flag Hosted on an AWS with EC2 for CloudCrafter Events and GameDays.",
+    "technologies": "AWS, EC2, CTFD, Route 53, DNS, CDK.",
+    "url": "https://github.com/san99tiago/aws-cdk-ctf"
+  },
+  {
     "title": "AWS Lambda-Based FastAPI Deployment",
     "description": "CDK template project with best FastAPI/Mangum practices for a FastAPI solution on top of Lambda Functions in AWS.",
     "technologies": "AWS, Lambda, FastAPI, CDK, DevOps.",
-    "url": "https://github.com/san99tiago/aws-cdk-fastapi-lambda"
+    "url": "https://github.com/san99tiago/aws-fastapi-lambda"
   },
   {
     "title": "AWS Medical Providers Automation",
@@ -40,6 +106,24 @@
     "description": "Custom-built business REST-API on top of AWS API Gateway (with Lambdas integration) that connected to MySQL database for commercial 'leads' information.",
     "technologies": "AWS, API-Gateway, Lambda, MySQL, CDK, REST-API.",
     "url": "https://github.com/san99tiago/freelance-aws-rest-api-mysql"
+  },
+  {
+    "title": "AWS Rekognition Demo",
+    "description": "DEMO about cool features that AWS Rekognition can for Computer Vision solutions.",
+    "technologies": "AWS, Rekognition, Lambda, S3, CDK.",
+    "url": "https://github.com/san99tiago/aws-rekognition-demo"
+  },
+  {
+    "title": "Advanced JSON Mapper",
+    "description": "Robust JSON Mapper on top of Python by using 'jsonpathng' with JMESPath expressions. Exposed as an API via FastAPI.",
+    "technologies": "JSON, JSONPathNG, JMESPath, Python, Mapper, FastAPI.",
+    "url": "https://github.com/san99tiago/jsonpath-ng-experiments"
+  },
+  {
+    "title": "FastAPI Docker GitHub Actions CICD",
+    "description": "DEMO to create a CICD pipeline for FastAPI Docker Images on top of GitHub Actions",
+    "technologies": "FastAPI, Docker, GitHub Actions",
+    "url": "https://github.com/san99tiago/fastapi-docker-github-actions"
   },
   {
     "title": "AWS CDK Lambda Docker Templates",
@@ -66,10 +150,22 @@
     "url": "https://github.com/san99tiago/aws-cdk-url-shortener"
   },
   {
+    "title": "AWS Lambda Layers",
+    "description": "My own public AWS Lambda Layers for different runtimes, versions and architectures to expose and simplify dependencies.",
+    "technologies": "AWS, Lambda, Lambda Layers, CDK.",
+    "url": "https://github.com/san99tiago/aws-lambda-layers"
+  },
+  {
     "title": "My Own CloudFormation Example Templates",
     "description": "Simple AWS CF templates to review previously deployed PoCs. Mostly for sandbox environments.",
     "technologies": "AWS, CloudFormation, IaC.",
     "url": "https://github.com/san99tiago/aws-cf-custom-templates"
+  },
+  {
+    "title": "AWS CDK ElastiCache Demo",
+    "description": "Amazon ElastiCache experiments on top of IaC on CDK with multiple Lambda-based queries/updates.",
+    "technologies": "AWS, ElastiCache, Redis, Lambda, Lambda Layer, CDK.",
+    "url": "https://github.com/san99tiago/aws-cdk-elasticache-experiment"
   },
   {
     "title": "REST-API for Australian Climate Sensors",

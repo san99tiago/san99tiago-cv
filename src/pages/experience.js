@@ -10,6 +10,7 @@ import thumb_2021_07_01_experience_bancolombia from '../public/images/experience
 import thumb_2021_11_01_experience_eia from '../public/images/experience/2021_11_01_experience_eia.png'
 import thumb_2023_05_02_experience_epam from '../public/images/experience/2023_05_02_experience_epam.png'
 import thumb_2023_02_01_experience_aws_community_builder from '../public/images/experience/2023_02_01_experience_aws_community_builder.png'
+import thumb_2024_01_01_experience_aws_user_group_medellin_leader from '../public/images/experience/2024_01_01_experience_aws_user_group_medellin_leader.png'
 
 const Experience = () => (
   <Layout title="Experience">
@@ -19,6 +20,17 @@ const Experience = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+          <WorkGridItem
+            id="aws-user-group-medellin-leader"
+            title="AWS User Group Leader"
+            thumbnail={
+              thumb_2024_01_01_experience_aws_user_group_medellin_leader
+            }
+          >
+            AWS UG Medellin (2024-present)
+          </WorkGridItem>
+        </Section>
         <Section>
           <WorkGridItem
             id="aws-community-builder"
@@ -31,7 +43,7 @@ const Experience = () => (
         <Section>
           <WorkGridItem
             id="cool-projects"
-            title="Awesome PoCs and Software for Others"
+            title="Open Source Software on AWS"
             thumbnail={thumb_2018_01_01_experience_cool_projects}
           >
             My Free Time (2017-present)
