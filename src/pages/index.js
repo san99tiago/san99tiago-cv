@@ -71,7 +71,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/SantiagoGarciaArango.jfif"
+              src="/images/SantiagoGarciaArango_Profile_MAIN.png"
               alt="Profile Image - Santiago Garcia Arango"
               width={120}
               height={120}
