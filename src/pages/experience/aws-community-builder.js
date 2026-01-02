@@ -4,7 +4,8 @@ import {
   Container,
   Heading,
   Link,
-  Box
+  Box,
+  Image
 } from '@chakra-ui/react'
 
 import { ExternalLink } from 'lucide-react'
@@ -22,7 +23,10 @@ import Section from '../../components/section'
 
 const ExperienceAWSCommunityBuilder = () => (
   <Layout title="AWS Community Builder">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         AWS Community Builder <Badge>2023-present</Badge>
       </Title>
@@ -75,6 +79,16 @@ const ExperienceAWSCommunityBuilder = () => (
           </Link>
         </ExperienceSection>
       </Section>
+
+      <Box my={6}>
+        <Image
+          src="/images/experience/aws-communities/2024_11_29_AWS_Communities_ReInvent.jpg"
+          alt="AWS Communities at re:Invent 2024"
+          borderRadius="lg"
+          width="100%"
+          maxW="640px"
+        />
+      </Box>
 
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe

@@ -5,9 +5,7 @@ import {
   Container,
   Heading,
   Link,
-  SimpleGrid,
-  Text,
-  chakra
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
@@ -52,8 +50,7 @@ const Home = () => (
           {
             <p>
               {' '}
-              AWS UG Leader | AWS Community Builder | Cloud Architect
-              experienced in DevOps{' '}
+              Solutions Architect at AWS | AWS UG Leader | GenAI Enthusiast{' '}
             </p>
           }
         </Box>
@@ -89,20 +86,19 @@ const Home = () => (
         </Box>
       </Box>
 
-      <Box>
-        <Text>{``}</Text>
-      </Box>
-
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Who Am I?
         </Heading>
 
         <Paragraph>
-          As a Solutions Architect experienced in DevOps, I&lsquo;m passionate
-          about creating cutting-edge software using event-driven architectures.
-          I&lsquo;m currently immersed in production-grade AWS workflows,
-          leveraging DevSecOps best practices to drive innovation.
+          As a Solutions Architect at AWS experienced in DevOps and AI,
+          I&lsquo;m passionate about helping customers build cutting-edge
+          solutions using event-driven architectures (EDA), Internal Developer
+          Platforms (IDPs) and using Generative AI to boost business outcomes
+          and build the future. I work with top FSI clients across LATAM,
+          driving cloud adoption and leading innovative projects with DevSecOps
+          and AWS.
         </Paragraph>
 
         <Box style={{ marginTop: '10px' }} />
@@ -125,6 +121,8 @@ const Home = () => (
             href="https://www.youtube.com/@san99tiago"
             passHref
             target="_blank"
+            color="teal.300"
+            _hover={{ color: 'teal.500', textDecoration: 'underline' }}
           >
             Santiago Garcia Arango Tech
           </Link>
@@ -156,7 +154,7 @@ const Home = () => (
           <BioYear>Methodologies</BioYear>
           CI/CD, Infrastructure as Code, DevSecOps, Event Driven Architectures,
           TDD, SOLID, Design Patterns, Automation, Clean Code, Static Code
-          Analysis, Pair Programming, Scrum,.
+          Analysis, Pair Programming, Scrum.
         </BioSection>
         <BioSection>
           <BioYear>Technical</BioYear>
@@ -167,9 +165,9 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>AWS Experience</BioYear>
-          [AWS Certified x4], IAM, CloudFormation, CDK, Organizations, Lambda,
-          Lambda Layer, EventBridge, API Gateway, DynamoDB, CloudWatch, S3,
-          CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2,
+          [10x AWS Certifications], IAM, CloudFormation, CDK, Organizations,
+          Lambda, Lambda Layer, EventBridge, API Gateway, DynamoDB, CloudWatch,
+          S3, CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2,
           Bedrock, EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM,
           CodeBuild, CodePipeline, IAM Identity Center (SSO), Control Tower,
           Kinesis, Chime.
@@ -181,7 +179,14 @@ const Home = () => (
           Education & Experience
         </Heading>
         <BioSection>
-          <BioYear>2023-present</BioYear>
+          <BioYear>2024-present</BioYear>
+          Solutions Architect
+          <a href="https://aws.amazon.com" target="_blank">
+            <b> @ Amazon Web Services (AWS)</b>
+          </a>
+        </BioSection>
+        <BioSection>
+          <BioYear>2023-2024</BioYear>
           Lead Systems Engineer (DevOps)
           <a href="https://www.epam.com" target="_blank">
             <b> @ EPAM Systems</b>

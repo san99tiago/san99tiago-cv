@@ -17,9 +17,12 @@ import Section from '../../components/section'
 
 const ExperienceEpamSystems = () => (
   <Layout title="EPAM Systems">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
-        EPAM Systems <Badge>2022-present</Badge>
+        EPAM Systems <Badge>2022-2024</Badge>
       </Title>
       <P>
         EPAM Systems is an American company that specializes in software
@@ -73,7 +76,6 @@ const ExperienceEpamSystems = () => (
           internal EPAM Systems architectures, videos and articles:
           <Box style={{ marginTop: '10px' }} />
           <ExperienceSubSection>
-            &#x2022; &ensp;
             <Link
               href="https://wearecommunity.io/communities/devops_co/articles/3287"
               target="_blank"
@@ -83,7 +85,6 @@ const ExperienceEpamSystems = () => (
             </Link>
           </ExperienceSubSection>
           <ExperienceSubSection>
-            &#x2022; &ensp;
             <Link href="https://youtu.be/532kzqd3t4Q" target="_blank">
               Video: [Spanish] AWS CDK Workshop: Infrastructure as Code with
               Santiago Garcia | EPAM Colombia

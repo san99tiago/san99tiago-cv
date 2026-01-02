@@ -16,7 +16,10 @@ import Section from '../../components/section'
 
 const ExperiencePragma = () => (
   <Layout title="PRAGMA">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         PRAGMA <Badge>2021</Badge>
       </Title>

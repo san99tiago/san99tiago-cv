@@ -53,7 +53,10 @@ for (let i = 0; i < DataJson.length; i++) {
 
 const ExperienceCoolProjects = () => (
   <Layout title="Cool Projects">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         Cool Projects <Badge>2017-present</Badge>
       </Title>

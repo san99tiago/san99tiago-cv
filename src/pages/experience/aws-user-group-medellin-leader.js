@@ -22,7 +22,10 @@ import Section from '../../components/section'
 
 const ExperienceAWSUGLeader = () => (
   <Layout title="AWS User Group Leader">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         AWS User Group Leader <Badge>2024-present</Badge>
       </Title>
@@ -79,6 +82,24 @@ const ExperienceAWSUGLeader = () => (
         <iframe
           src="https://www.youtube.com/embed/s-BrAa-dIfQ"
           title="AWS User Group Medellin | Advanced APIs Event - Santiago Garcia Arango"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
+
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/9LMtXSYBZ-c"
+          title="AWS User Group Medellin - Santiago Garcia Arango"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
+
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/YGnyLX_ItIM"
+          title="AWS User Group Medellin - Santiago Garcia Arango"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>

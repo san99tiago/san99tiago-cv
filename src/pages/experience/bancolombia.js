@@ -16,7 +16,10 @@ import Section from '../../components/section'
 
 const ExperienceBancolombia = () => (
   <Layout title="Bancolombia">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         Bancolombia <Badge>2021-2022</Badge>
       </Title>

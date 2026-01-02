@@ -6,7 +6,12 @@ import styled from '@emotion/styled'
 
 export const Title = ({ children }) => (
   <Box>
-    <Link as={NextLink} href="/experience">
+    <Link
+      as={NextLink}
+      href="/experience"
+      color="teal.300"
+      _hover={{ color: 'teal.500' }}
+    >
       Experience
     </Link>
     <span>
@@ -50,11 +55,40 @@ export const ExperienceSection = styled(Box)`
   padding-left: 1.5em;
   text-indent: -1.5em;
   text-align: justify;
+
+  /* Style links inside experience sections */
+  a {
+    color: #4fd1c5;
+    text-decoration: none;
+    text-indent: 0;
+    display: inline;
+    &:hover {
+      color: #38b2ac;
+      text-decoration: underline;
+    }
+  }
 `
 export const ExperienceSubSection = styled(Box)`
-  padding-left: 1.8em;
-  text-indent: -1.8em;
+  padding-left: 2.5em;
+  text-indent: 0;
   text-align: justify;
+  margin-top: 0.3em;
+
+  /* Style links inside experience sub-sections */
+  a {
+    color: #4fd1c5;
+    text-decoration: none;
+    &:hover {
+      color: #38b2ac;
+      text-decoration: underline;
+    }
+  }
+
+  /* Add bullet before content */
+  &::before {
+    content: '•';
+    margin-right: 0.5em;
+  }
 `
 
 export const ExperienceEmphasis = styled.span`
@@ -63,6 +97,8 @@ export const ExperienceEmphasis = styled.span`
 `
 // This is to avoid the badges padding superposition and moving to left
 export const BadgeStyle = styled.span`
+  display: inline-block;
   padding-left: 0em;
   text-indent: 0em;
+  margin-right: 0.5em;
 `
