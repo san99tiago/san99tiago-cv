@@ -21,7 +21,10 @@ import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram
 
 const Content = () => (
   <Layout title="Content">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Heading as="h3" fontSize={20} mb={4}>
         Latest Content
       </Heading>

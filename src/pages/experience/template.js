@@ -1,5 +1,5 @@
 import { Container, Badge, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -45,7 +45,10 @@ const ExperienceTemplate = () => (
             target="_blank"
           >
             https://github.com/san99tiago/docker-pirate
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
       </Section>

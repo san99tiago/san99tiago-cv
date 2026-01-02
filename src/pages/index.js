@@ -7,10 +7,9 @@ import {
   Link,
   SimpleGrid,
   Text,
-  useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 
 // Main components
@@ -26,19 +25,20 @@ import thumbGitHub from '../public/images/home/thumbnail_san99tiago_github.png'
 import thumbLinkedin from '../public/images/home/thumbnail_san99tiago_linkedin.png'
 import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram.png'
 
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+// Using Next.js Image component directly for better optimization
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Box
         borderRadius="lg"
         mb={6}
         p={3}
         textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg="whiteAlpha.200"
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Hey, I love to learn new tech things everyday!
@@ -67,18 +67,23 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="120px"
-            h="120px"
+            w={{ base: '100px', md: '120px' }}
+            h={{ base: '100px', md: '120px' }}
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
-            <ProfileImage
+            <Image
               src="/images/SantiagoGarciaArango.jfif"
               alt="Profile Image - Santiago Garcia Arango"
-              borderRadius="full"
-              width="120"
-              height="120"
+              width={120}
+              height={120}
+              style={{
+                borderRadius: '50%',
+                objectFit: 'cover',
+                width: '100%',
+                height: '100%'
+              }}
             />
           </Box>
         </Box>
@@ -130,10 +135,10 @@ const Home = () => (
             as={NextLink}
             href="/content"
             // scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
+            colorPalette="teal"
           >
             Explore my latest posts!
+            <ChevronRight size={16} style={{ marginLeft: '8px' }} />
           </Button>
         </Box>
       </Section>

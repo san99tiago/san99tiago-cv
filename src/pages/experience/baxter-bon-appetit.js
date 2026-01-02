@@ -1,5 +1,5 @@
 import { AspectRatio, Container, Badge, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -56,7 +56,7 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             Official Publication EIA University
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -68,7 +68,7 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -80,7 +80,7 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit-thesis-latex
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -92,7 +92,7 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             GrabCad 3D Spoon
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
           </Link>
         </ExperienceSection>
         <ExperienceSection>

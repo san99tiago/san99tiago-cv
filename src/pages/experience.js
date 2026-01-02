@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -14,7 +14,10 @@ import thumb_2024_01_01_experience_aws_user_group_medellin_leader from '../publi
 
 const Experience = () => (
   <Layout title="Experience">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Heading as="h3" fontSize={20} mb={4}>
         Featured
       </Heading>
@@ -61,7 +64,7 @@ const Experience = () => (
       </SimpleGrid>
 
       <Section delay={0.1}>
-        <Divider my={5} />
+        <Box height="1px" bg="gray.200" my={5} width="100%" />
         <Heading as="h3" fontSize={20} mb={4}>
           Work Experience
         </Heading>

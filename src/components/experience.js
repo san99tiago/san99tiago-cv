@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
+import NextImage from 'next/image'
 import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRight } from 'lucide-react'
 import styled from '@emotion/styled'
 
 export const Title = ({ children }) => (
@@ -10,7 +11,7 @@ export const Title = ({ children }) => (
     </Link>
     <span>
       {' '}
-      <ChevronRightIcon />{' '}
+      <ChevronRight size={16} />{' '}
     </span>
     <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
       {children}
@@ -19,16 +20,28 @@ export const Title = ({ children }) => (
 )
 
 export const ExperienceImage = ({ src, alt }) => (
-  <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  <NextImage
+    src={src}
+    alt={alt}
+    width={800}
+    height={400}
+    style={{
+      borderRadius: '8px',
+      width: '100%',
+      height: 'auto',
+      marginBottom: '1rem',
+      objectFit: 'cover'
+    }}
+  />
 )
 
 export const BadgeGreen = ({ children }) => (
-  <Badge colorScheme="green" mr={2}>
+  <Badge colorPalette="green" mr={2}>
     {children}
   </Badge>
 )
 export const BadgeYellow = ({ children }) => (
-  <Badge colorScheme="yellow" mr={2}>
+  <Badge colorPalette="yellow" mr={2}>
     {children}
   </Badge>
 )

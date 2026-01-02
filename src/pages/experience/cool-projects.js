@@ -1,5 +1,6 @@
-import { Badge, Container, Divider, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Badge, Container, Heading, Link, Box } from '@chakra-ui/react'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -20,7 +21,7 @@ for (let i = 0; i < DataJson.length; i++) {
   const project = DataJson[i]
   sections.push(
     <Section delay={0.1} key={project.title}>
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
       <Heading as="h3" variant="section-title">
         {project.title}
       </Heading>
@@ -40,7 +41,10 @@ for (let i = 0; i < DataJson.length; i++) {
         </BadgeStyle>
         <Link href={project.url} target="_blank">
           {project.url}
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLink
+            size={12}
+            style={{ marginLeft: '2px', display: 'inline' }}
+          />
         </Link>
       </ExperienceSection>
     </Section>

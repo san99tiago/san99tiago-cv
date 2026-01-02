@@ -1,5 +1,6 @@
-import { Container, Badge, Box, Divider, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Box, Heading, Link } from '@chakra-ui/react'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -25,11 +26,14 @@ const ExperiencePragma = () => (
         solutions. &nbsp;
         <Link href="https://www.pragma.co" target="_blank">
           https://www.pragma.co
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLink
+            size={12}
+            style={{ marginLeft: '2px', display: 'inline' }}
+          />
         </Link>
       </P>
 
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
       <Box style={{ marginTop: '10px' }} />
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">

@@ -2,11 +2,12 @@ import {
   AspectRatio,
   Badge,
   Container,
-  Divider,
   Heading,
-  Link
+  Link,
+  Box
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -31,7 +32,7 @@ const ExperienceAWSCommunityBuilder = () => (
         based on my active contributions to the open-source community on GitHub
         and my growing YouTube channel.
       </P>
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -52,7 +53,10 @@ const ExperienceAWSCommunityBuilder = () => (
             target="_blank"
           >
             Official AWS Community Builders Page
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -64,7 +68,10 @@ const ExperienceAWSCommunityBuilder = () => (
             target="_blank"
           >
             LinkedIn Post Explaining AWS CB Program
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
       </Section>

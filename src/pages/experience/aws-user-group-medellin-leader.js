@@ -2,11 +2,12 @@ import {
   AspectRatio,
   Badge,
   Container,
-  Divider,
   Heading,
-  Link
+  Link,
+  Box
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -31,7 +32,7 @@ const ExperienceAWSUGLeader = () => (
         expertise. This opportunity reflects my active contributions and ongoing
         support to the AWS community in Medellin.
       </P>
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -54,7 +55,10 @@ const ExperienceAWSUGLeader = () => (
             target="_blank"
           >
             Official AWS User Groups Page
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -63,7 +67,10 @@ const ExperienceAWSUGLeader = () => (
           </BadgeStyle>
           <Link href="https://www.meetup.com/awsugmed/" target="_blank">
             Meetup Link for AWS User Group Medellin
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
       </Section>
