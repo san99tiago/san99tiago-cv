@@ -76,6 +76,9 @@ jobs:
     permissions:
       id-token: write # This is required for requesting the JWT
       contents: read # This is required for actions/checkout
+    outputs:
+      deployment-environment: ${{ steps.setup-env.outputs.deployment-environment }}
+      stacks-status: ${{ steps.synth-stacks.outputs.stacks-status }}
     steps:
       - uses: actions/checkout@v4
 
@@ -119,25 +122,100 @@ jobs:
 
       # Not 100% optimal, but does the work for setting deployment environments from branch
       - name: Setup Deployment Environment from Branch
+        id: setup-env
         run: |
           # To update the deployment environment based on the git branch
           if [[ $GITHUB_REF == 'refs/heads/main' ]]; then
             echo "DEPLOYMENT_ENVIRONMENT=prod" >> "$GITHUB_ENV"
+            echo "deployment-environment=prod" >> "$GITHUB_OUTPUT"
             echo "Deployment environment is PROD"
           else
             echo "DEPLOYMENT_ENVIRONMENT=dev" >> "$GITHUB_ENV"
+            echo "deployment-environment=dev" >> "$GITHUB_OUTPUT"
             echo "Deployment environment is DEV"
           fi
 
-      - name: CDK Synth
+      - name: CDK List Stacks
+        id: list-stacks
         run: |
           cd ./cdk
-          cdk synth
+          echo "Available stacks:"
+          export CI=true
+          cdk list
+          STACK_IDS=$(CI=true cdk list | sed 's/ (.*//' | tr '\n' ' ')
+          echo "stack-list=$STACK_IDS" >> "$GITHUB_OUTPUT"
 
-      - name: CDK Diff
+      - name: CDK Synth All Stacks
+        id: synth-stacks
         run: |
           cd ./cdk
-          cdk diff
+          echo "Synthesizing all stacks..."
+          export CI=true
+
+          SYNTH_SUCCESS=true
+          FAILED_STACKS=""
+          SUCCESS_STACKS=""
+
+          STACKS=$(CI=true cdk list | sed 's/ (.*//')
+          STACKS_COMMA=$(echo "$STACKS" | tr '\n' ',' | sed 's/,$//')
+
+          if CI=true cdk synth; then
+            echo "✅ All stacks synthesized successfully"
+            SUCCESS_STACKS="$STACKS_COMMA"
+          else
+            echo "❌ CDK synth failed for some stacks"
+            SYNTH_SUCCESS=false
+            FAILED_STACKS="$STACKS_COMMA"
+          fi
+
+          echo "synth-success=$SYNTH_SUCCESS" >> "$GITHUB_OUTPUT"
+          echo "failed-stacks=$FAILED_STACKS" >> "$GITHUB_OUTPUT"
+          echo "success-stacks=$SUCCESS_STACKS" >> "$GITHUB_OUTPUT"
+
+          if [ "$SYNTH_SUCCESS" = "true" ]; then
+            echo "stacks-status=success" >> "$GITHUB_OUTPUT"
+          else
+            echo "stacks-status=failed" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+
+      - name: CDK Diff All Stacks
+        if: steps.synth-stacks.outputs.synth-success == 'true'
+        run: |
+          cd ./cdk
+          echo "Running diff for all stacks..."
+          export CI=true
+
+          STACKS_RAW=$(CI=true cdk list | sed 's/ (.*//')
+          STACKS=$(echo "$STACKS_RAW" | tr '\n' ' ')
+
+          echo "📋 Showing differences for all stacks:"
+          for stack in $STACKS; do
+            echo ""
+            echo "🔍 Diff for stack: $stack"
+            echo "----------------------------------------"
+            if CI=true cdk diff "$stack"; then
+              echo "✅ Diff completed for $stack"
+            else
+              echo "⚠️  Diff failed for $stack (this might be normal for new stacks)"
+            fi
+            echo "----------------------------------------"
+          done
+
+      - name: Report Synth Results
+        if: always()
+        run: |
+          echo "## CDK Synth & Diff Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.synth-stacks.outputs.synth-success }}" = "true" ]; then
+            echo "✅ **Status**: All stacks synthesized successfully" >> $GITHUB_STEP_SUMMARY
+            echo "📦 **Successful Stacks**: ${{ steps.synth-stacks.outputs.success-stacks }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **Status**: Synth failed for some stacks" >> $GITHUB_STEP_SUMMARY
+            echo "💥 **Failed Stacks**: ${{ steps.synth-stacks.outputs.failed-stacks }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🌍 **Environment**: ${{ steps.setup-env.outputs.deployment-environment }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Archive CDK Synth results (no assets)
         uses: actions/upload-artifact@v4
@@ -180,9 +258,14 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - iac-checkov
+      - cdk-synth-diff
     permissions:
       id-token: write # This is required for requesting the JWT
       contents: read # This is required for actions/checkout
+    outputs:
+      deployment-status: ${{ steps.deploy-stacks.outputs.deployment-status }}
+      successful-stacks: ${{ steps.deploy-stacks.outputs.successful-stacks }}
+      failed-stacks: ${{ steps.deploy-stacks.outputs.failed-stacks }}
     steps:
       - uses: actions/checkout@v4
 
@@ -234,6 +317,137 @@ jobs:
             echo "Deployment environment is DEV"
           fi
 
-      # NOTE: for now no manual approvals are required
-      - name: Deploy to AWS
-        run: bash deploy.sh $DEPLOYMENT_ENVIRONMENT
+      - name: Deploy All Stacks to AWS
+        id: deploy-stacks
+        run: |
+          cd ./cdk
+          echo "🚀 Starting deployment of all enabled stacks..."
+          echo "Environment: $DEPLOYMENT_ENVIRONMENT"
+
+          export CI=true
+
+          OVERALL_SUCCESS=true
+          SUCCESSFUL_STACKS=""
+          FAILED_STACKS=""
+          DEPLOYMENT_SUMMARY=""
+
+          STACKS_RAW=$(CI=true cdk list | sed 's/ (.*//')
+          STACKS=$(echo "$STACKS_RAW" | tr '\n' ' ')
+          TOTAL_STACKS=$(echo "$STACKS_RAW" | wc -l)
+
+          echo "📋 Found $TOTAL_STACKS stack(s) to deploy:"
+          for stack in $STACKS; do
+            echo "  - $stack"
+          done
+          echo ""
+
+          STACK_COUNT=0
+          for stack in $STACKS; do
+            STACK_COUNT=$((STACK_COUNT + 1))
+            echo "🔄 Deploying stack $STACK_COUNT/$TOTAL_STACKS: $stack"
+            echo "----------------------------------------"
+            
+            if CI=true cdk deploy "$stack" --require-approval never; then
+              echo "✅ Successfully deployed: $stack"
+              if [ -z "$SUCCESSFUL_STACKS" ]; then
+                SUCCESSFUL_STACKS="$stack"
+              else
+                SUCCESSFUL_STACKS="$SUCCESSFUL_STACKS,$stack"
+              fi
+              DEPLOYMENT_SUMMARY="$DEPLOYMENT_SUMMARY\n✅ $stack: SUCCESS"
+            else
+              echo "❌ Failed to deploy: $stack"
+              OVERALL_SUCCESS=false
+              if [ -z "$FAILED_STACKS" ]; then
+                FAILED_STACKS="$stack"
+              else
+                FAILED_STACKS="$FAILED_STACKS,$stack"
+              fi
+              DEPLOYMENT_SUMMARY="$DEPLOYMENT_SUMMARY\n❌ $stack: FAILED"
+              echo "⚠️  Continuing with remaining stacks..."
+            fi
+            echo "----------------------------------------"
+            echo ""
+          done
+
+          echo "📊 DEPLOYMENT SUMMARY"
+          echo "===================="
+          echo -e "$DEPLOYMENT_SUMMARY"
+          echo ""
+
+          if [ "$OVERALL_SUCCESS" = "true" ]; then
+            echo "🎉 All stacks deployed successfully!"
+            echo "deployment-status=success" >> "$GITHUB_OUTPUT"
+          else
+            echo "⚠️  Some stacks failed to deploy"
+            echo "deployment-status=partial" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "successful-stacks=$SUCCESSFUL_STACKS" >> "$GITHUB_OUTPUT"
+          echo "failed-stacks=$FAILED_STACKS" >> "$GITHUB_OUTPUT"
+
+          if [ "$OVERALL_SUCCESS" = "false" ]; then
+            echo "❌ Deployment completed with failures"
+            exit 1
+          fi
+
+      - name: Report Deployment Results
+        if: always()
+        run: |
+          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          case "${{ steps.deploy-stacks.outputs.deployment-status }}" in
+            "success")
+              echo "✅ **Status**: All stacks deployed successfully" >> $GITHUB_STEP_SUMMARY
+              echo "🎯 **Successful Stacks**: ${{ steps.deploy-stacks.outputs.successful-stacks }}" >> $GITHUB_STEP_SUMMARY
+              ;;
+            "partial")
+              echo "⚠️ **Status**: Partial deployment (some stacks failed)" >> $GITHUB_STEP_SUMMARY
+              echo "✅ **Successful Stacks**: ${{ steps.deploy-stacks.outputs.successful-stacks }}" >> $GITHUB_STEP_SUMMARY
+              echo "❌ **Failed Stacks**: ${{ steps.deploy-stacks.outputs.failed-stacks }}" >> $GITHUB_STEP_SUMMARY
+              ;;
+            *)
+              echo "❌ **Status**: Deployment failed" >> $GITHUB_STEP_SUMMARY
+              echo "💥 **Failed Stacks**: ${{ steps.deploy-stacks.outputs.failed-stacks }}" >> $GITHUB_STEP_SUMMARY
+              ;;
+          esac
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🌍 **Environment**: ${{ needs.cdk-synth-diff.outputs.deployment-environment }}" >> $GITHUB_STEP_SUMMARY
+          echo "📅 **Deployed at**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+
+  deployment-notification:
+    name: Deployment Notification
+    runs-on: ubuntu-latest
+    needs:
+      - cdk-deploy
+      - cdk-synth-diff
+    if: always()
+    steps:
+      - name: Notify Deployment Status
+        run: |
+          echo "## 📢 Final Deployment Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ needs.cdk-deploy.result }}" = "success" ]; then
+            echo "🎉 **Overall Status**: SUCCESS - All stacks deployed successfully!" >> $GITHUB_STEP_SUMMARY
+            echo "✅ **Successful Stacks**: ${{ needs.cdk-deploy.outputs.successful-stacks }}" >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ needs.cdk-deploy.result }}" = "failure" ]; then
+            if [ -n "${{ needs.cdk-deploy.outputs.successful-stacks }}" ]; then
+              echo "⚠️ **Overall Status**: PARTIAL SUCCESS - Some stacks deployed, others failed" >> $GITHUB_STEP_SUMMARY
+              echo "✅ **Successful Stacks**: ${{ needs.cdk-deploy.outputs.successful-stacks }}" >> $GITHUB_STEP_SUMMARY
+              echo "❌ **Failed Stacks**: ${{ needs.cdk-deploy.outputs.failed-stacks }}" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "❌ **Overall Status**: FAILURE - No stacks were deployed successfully" >> $GITHUB_STEP_SUMMARY
+              echo "💥 **Failed Stacks**: ${{ needs.cdk-deploy.outputs.failed-stacks }}" >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "⏭️ **Overall Status**: SKIPPED - Deployment was skipped or cancelled" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🌍 **Environment**: ${{ needs.cdk-synth-diff.outputs.deployment-environment }}" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **Workflow**: ${{ github.workflow }}" >> $GITHUB_STEP_SUMMARY
+          echo "🌿 **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "👤 **Triggered by**: ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
