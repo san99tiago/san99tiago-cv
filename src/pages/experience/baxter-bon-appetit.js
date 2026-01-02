@@ -1,5 +1,5 @@
 import { AspectRatio, Container, Badge, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -14,7 +14,10 @@ import Section from '../../components/section'
 
 const ExperienceBaxterBonAppetit = () => (
   <Layout title="Baxter Bon Appetit">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         Baxter Bon Appetit <Badge>2021-2022</Badge>
       </Title>
@@ -56,7 +59,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             Official Publication EIA University
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -68,7 +74,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -80,7 +89,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit-thesis-latex
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -92,7 +104,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             GrabCad 3D Spoon
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>

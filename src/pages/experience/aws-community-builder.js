@@ -2,11 +2,13 @@ import {
   AspectRatio,
   Badge,
   Container,
-  Divider,
   Heading,
-  Link
+  Link,
+  Box,
+  Image
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -21,7 +23,10 @@ import Section from '../../components/section'
 
 const ExperienceAWSCommunityBuilder = () => (
   <Layout title="AWS Community Builder">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         AWS Community Builder <Badge>2023-present</Badge>
       </Title>
@@ -31,7 +36,7 @@ const ExperienceAWSCommunityBuilder = () => (
         based on my active contributions to the open-source community on GitHub
         and my growing YouTube channel.
       </P>
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -52,7 +57,10 @@ const ExperienceAWSCommunityBuilder = () => (
             target="_blank"
           >
             Official AWS Community Builders Page
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -64,10 +72,23 @@ const ExperienceAWSCommunityBuilder = () => (
             target="_blank"
           >
             LinkedIn Post Explaining AWS CB Program
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
       </Section>
+
+      <Box my={6}>
+        <Image
+          src="/images/experience/aws-communities/2024_11_29_AWS_Communities_ReInvent.jpg"
+          alt="AWS Communities at re:Invent 2024"
+          borderRadius="lg"
+          width="100%"
+          maxW="640px"
+        />
+      </Box>
 
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe

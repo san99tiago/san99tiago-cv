@@ -2,11 +2,12 @@ import {
   AspectRatio,
   Badge,
   Container,
-  Divider,
   Heading,
-  Link
+  Link,
+  Box
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -21,7 +22,10 @@ import Section from '../../components/section'
 
 const ExperienceAWSUGLeader = () => (
   <Layout title="AWS User Group Leader">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         AWS User Group Leader <Badge>2024-present</Badge>
       </Title>
@@ -31,7 +35,7 @@ const ExperienceAWSUGLeader = () => (
         expertise. This opportunity reflects my active contributions and ongoing
         support to the AWS community in Medellin.
       </P>
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -54,7 +58,10 @@ const ExperienceAWSUGLeader = () => (
             target="_blank"
           >
             Official AWS User Groups Page
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -63,7 +70,10 @@ const ExperienceAWSUGLeader = () => (
           </BadgeStyle>
           <Link href="https://www.meetup.com/awsugmed/" target="_blank">
             Meetup Link for AWS User Group Medellin
-            <ExternalLinkIcon mx="2px" />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
       </Section>
@@ -72,6 +82,24 @@ const ExperienceAWSUGLeader = () => (
         <iframe
           src="https://www.youtube.com/embed/s-BrAa-dIfQ"
           title="AWS User Group Medellin | Advanced APIs Event - Santiago Garcia Arango"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
+
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/9LMtXSYBZ-c"
+          title="AWS User Group Medellin - Santiago Garcia Arango"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
+
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/YGnyLX_ItIM"
+          title="AWS User Group Medellin - Santiago Garcia Arango"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>

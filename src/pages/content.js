@@ -12,6 +12,9 @@ import thumb_2023_04_Video_Tutorial_CDK_1_Lambda from '../public/images/content/
 import thumb_2024_03_01_APIs_en_AWS_CloudCrafters from '../public/images/content/2024_03_01_APIs_en_AWS_CloudCrafters.png'
 import thumb_2024_05_30_Serverless_Junior_to_Senior from '../public/images/content/2024_05_30_Serverless_Junior_to_Senior.png'
 import thumb_2024_06_01_APIs_Avanzadas_AWS_UG_Medellin from '../public/images/content/2024_06_01_APIs_Avanzadas_AWS_UG_Medellin.png'
+import thumb_2024_11_06_WhatsApp_Chatbot_GenAI_AWS from '../public/images/content/2024_11_06_YouTube_Banner_Chatbot_WhatsApp_AWS.png'
+import thumb_2025_07_19_IA_Generativa_AWS from '../public/images/content/2025_07_19_YouTube_Banner_IA_Generativa_Recap_AWS_UGMed.png'
+import thumb_2025_08_28_RAG_Embeddings_GenAI_Women from '../public/images/content/2025_08_28_AWS_RAG_Embeddings_GenAI_Women_Col.jpg'
 
 // End page thumbnails
 import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
@@ -21,7 +24,10 @@ import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram
 
 const Content = () => (
   <Layout title="Content">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Heading as="h3" fontSize={20} mb={4}>
         Latest Content
       </Heading>
@@ -29,14 +35,14 @@ const Content = () => (
       <Section>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="APIs avanzadas en AWS con API-Gateway, FastAPI y Cognito (AWS UG Medellin)"
-            thumbnail={thumb_2024_06_01_APIs_Avanzadas_AWS_UG_Medellin}
-            href="https://youtu.be/s-BrAa-dIfQ"
+            title="Tokens, Embeddings, RAG - GenAI (AWS Women Colombia)"
+            thumbnail={thumb_2025_08_28_RAG_Embeddings_GenAI_Women}
+            href="https://youtu.be/-nl8d7zW3VU"
           />
           <GridItem
-            title="From Junior Developer to Cloud Expert | Working in the cloud"
-            thumbnail={thumb_2024_05_30_Serverless_Junior_to_Senior}
-            href="https://youtu.be/_jDtSPrBESo"
+            title="Lo Nuevo de IA Generativa - Agents, MCP, A2A, AgentCore (AWS UG Medellin)"
+            thumbnail={thumb_2025_07_19_IA_Generativa_AWS}
+            href="https://youtu.be/YGnyLX_ItIM"
           />
         </SimpleGrid>
       </Section>
@@ -44,14 +50,44 @@ const Content = () => (
       <Section>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
+            title="WhatsApp Chatbot with GenAI on AWS (AWS UG Medellin)"
+            thumbnail={thumb_2024_11_06_WhatsApp_Chatbot_GenAI_AWS}
+            href="https://youtu.be/9LMtXSYBZ-c"
+          />
+          <GridItem
+            title="APIs avanzadas en AWS con API-Gateway, FastAPI y Cognito (AWS UG Medellin)"
+            thumbnail={thumb_2024_06_01_APIs_Avanzadas_AWS_UG_Medellin}
+            href="https://youtu.be/s-BrAa-dIfQ"
+          />
+        </SimpleGrid>
+      </Section>
+
+      <Section>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="From Junior Developer to Cloud Expert | Working in the cloud"
+            thumbnail={thumb_2024_05_30_Serverless_Junior_to_Senior}
+            href="https://youtu.be/_jDtSPrBESo"
+          />
+          <GridItem
             title="Despliegue de FastAPI en AWS con Lambda y API-Gateway / Santiago Garcia"
             thumbnail={thumb_2024_03_01_APIs_en_AWS_CloudCrafters}
             href="https://youtu.be/EcE6VLlgZO4"
           />
+        </SimpleGrid>
+      </Section>
+
+      <Section>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Tutorial AWS CDK Nivel 1: Despliegue de AWS LAMBDA con Infrastructura como Código (IaC)"
             thumbnail={thumb_2023_04_Video_Tutorial_CDK_1_Lambda}
             href="https://youtu.be/q9qkCpXLlGE"
+          />
+          <GridItem
+            title="YouTube Playlist: Prácticas DevOps (11 Videos)"
+            thumbnail={thumb_2021_04_09_Practicas_DevOps_General}
+            href="https://www.youtube.com/playlist?list=PLyTv82e1M2ifx3zHOrurVDdNUf9UzPxhx"
           />
         </SimpleGrid>
       </Section>
@@ -59,25 +95,20 @@ const Content = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="YouTube Playlist: Prácticas DevOps (11 Videos)"
-            thumbnail={thumb_2021_04_09_Practicas_DevOps_General}
-            href="https://www.youtube.com/playlist?list=PLyTv82e1M2ifx3zHOrurVDdNUf9UzPxhx"
-          />
-          <GridItem
             title="Aplicación Sencilla de FLASK (Python) con Frontend y Backend"
             thumbnail={thumb_2021_02_01_Flask_Frontend_and_Backend}
             href="https://youtu.be/7fNBL_HBwnM"
+          />
+          <GridItem
+            title="Virtual Environments in PYTHON: Explained and Real Example [English]"
+            thumbnail={thumb_2021_01_15_Python_Virtual_Environments}
+            href="https://youtu.be/OtOIAWM9B3I"
           />
         </SimpleGrid>
       </Section>
 
       <Section delay={0.2}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="Virtual Environments in PYTHON: Explained and Real Example [English]"
-            thumbnail={thumb_2021_01_15_Python_Virtual_Environments}
-            href="https://youtu.be/OtOIAWM9B3I"
-          />
           <GridItem
             title="Creación de Interfaces MULTI-PÁGINA con Tkinter en Python"
             thumbnail={thumb_2020_10_23_Python_Tkinter_GUI}

@@ -1,0 +1,23 @@
+Now proceed to help me UPDATE the "src" code with:
+
+1) Updated REACT and JS dependencies towards the latest supported versions. Use web search to figure out the most up to date dependencies and best approach.
+
+2) Create local unit tests (not too many, keep them simple), to validate compilation and source code execution.
+
+3) Update the main SRC code towards up to date information, include:
+
+- Now I have 10x AWS Certifications.
+
+- Now I work on Amazon Web Services as an "Solutions Architect". 
+
+- For the Work Experience, include the new "AWS" - "Solutions Architect" section/data. For the image, keep it pointing to the image "2024_11_25_experience_aws.png" (I will add it later). For the data, include that I have been working with advanced Cloud-Based archictectures on AWS for top FSI Clients over LATAM, leading Generative AI adoption, CORE migrations, Serverless architectures and helping to lead the cloud and AI strategies for robust companies at the technical/business levels. Add
+
+- For the heading keep "Solutions Architect at AWS" | AWS UG Leader | GenAI Enthusiast
+
+- Include new content for: "WhatsApp Chatbot with GenAI on AWS" with link: https://youtu.be/9LMtXSYBZ-c and with image: "2024_11_06_YouTube_Banner_Chatbot_WhatsApp_AWS.png".
+
+- Include new contenct for: "Lo Nuevo de IA Generativa con AWS - Agentes, MCP, A2A, AgentCore". Link: https://youtu.be/YGnyLX_ItIM e imagen: "2025_07_19_YouTube_Banner_IA_Generativa_Recap_AWS_UGMed.png"
+
+- Review possible typos and enhancements on descriptions of the main pages.
+
+- Generate a detailed file under "changelog" folder called "CONTENT_CHANGES.md" that summarize the changes done over CONTENT and include a heading specifying the date which the changes/updates/additions were added.

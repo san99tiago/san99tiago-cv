@@ -1,5 +1,6 @@
-import { Container, Badge, Box, Divider, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Box, Heading, Link } from '@chakra-ui/react'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -15,7 +16,10 @@ import Section from '../../components/section'
 
 const ExperienceBancolombia = () => (
   <Layout title="Bancolombia">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
         Bancolombia <Badge>2021-2022</Badge>
       </Title>
@@ -26,11 +30,14 @@ const ExperienceBancolombia = () => (
         &nbsp;
         <Link href="https://www.grupobancolombia.com" target="_blank">
           https://www.grupobancolombia.com
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLink
+            size={12}
+            style={{ marginLeft: '2px', display: 'inline' }}
+          />
         </Link>
       </P>
 
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
       <Box style={{ marginTop: '10px' }} />
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">

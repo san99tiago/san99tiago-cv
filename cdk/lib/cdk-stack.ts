@@ -43,12 +43,6 @@ export class CdkStaticWebsiteHostingStack extends Stack {
       removalPolicy: RemovalPolicy.DESTROY,
     });
 
-    // Add static files from the NextJS "out" folder to the S3 for the web-hosting capabilities
-    const _s3DeployFiles = new s3_deploy.BucketDeployment(this, 'BucketMainDeployFiles', {
-      sources: [s3_deploy.Source.asset(nextJsOutputFolderPath)],
-      destinationBucket: mainBucket,
-    });
-
     // Obtain account R53 Hosted Zone for specific domain (these are previously created in each account)
     const hostedZone = route53.HostedZone.fromLookup(this, 'HostedZone', {
       domainName: hostedZoneName
@@ -161,6 +155,16 @@ export class CdkStaticWebsiteHostingStack extends Stack {
     // ! IMPORTANT: this A record will allow to show the content but will NOT do
     // ! the redirect. If redirect is needed, we would have to create an S3 bucket
     // ! with static hosting enabled and a redirect rule (plus R53 record also)
+
+    // Add static files from the NextJS "out" folder to the S3 for the web-hosting capabilities
+    // Note: This is placed after CloudFront distribution to enable cache invalidation
+    new s3_deploy.BucketDeployment(this, 'BucketMainDeployFiles', {
+      sources: [s3_deploy.Source.asset(nextJsOutputFolderPath)],
+      destinationBucket: mainBucket,
+      prune: true,  // Remove old files that are no longer in the source
+      distribution: cloudfrontDistribution,  // Invalidate CloudFront cache after deployment
+      distributionPaths: ['/*'],  // Invalidate all paths
+    });
 
   }
 }

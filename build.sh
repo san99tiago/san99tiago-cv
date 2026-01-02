@@ -21,4 +21,4 @@ echo "Building assets from nextjs app on $(pwd)"
 
 # Generate NextJS static files ("out" dir) for hosting in S3 bucket
 npm ci
-npm run build-export
+npm run build

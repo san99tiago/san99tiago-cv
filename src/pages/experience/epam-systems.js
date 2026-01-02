@@ -1,5 +1,6 @@
-import { Container, Badge, Box, Divider, Heading, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Box, Heading, Link } from '@chakra-ui/react'
+
+import { ExternalLink } from 'lucide-react'
 import {
   Title,
   BadgeStyle,
@@ -16,9 +17,12 @@ import Section from '../../components/section'
 
 const ExperienceEpamSystems = () => (
   <Layout title="EPAM Systems">
-    <Container>
+    <Container
+      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+      px={{ base: 4, md: 6, lg: 8 }}
+    >
       <Title>
-        EPAM Systems <Badge>2022-present</Badge>
+        EPAM Systems <Badge>2022-2024</Badge>
       </Title>
       <P>
         EPAM Systems is an American company that specializes in software
@@ -27,11 +31,14 @@ const ExperienceEpamSystems = () => (
         Companies multiple times. &nbsp;
         <Link href="https://www.epam.com" target="_blank">
           https://www.epam.com
-          <ExternalLinkIcon mx="2px" />
+          <ExternalLink
+            size={12}
+            style={{ marginLeft: '2px', display: 'inline' }}
+          />
         </Link>
       </P>
 
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
       <Box style={{ marginTop: '10px' }} />
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
@@ -69,7 +76,6 @@ const ExperienceEpamSystems = () => (
           internal EPAM Systems architectures, videos and articles:
           <Box style={{ marginTop: '10px' }} />
           <ExperienceSubSection>
-            &#x2022; &ensp;
             <Link
               href="https://wearecommunity.io/communities/devops_co/articles/3287"
               target="_blank"
@@ -79,7 +85,6 @@ const ExperienceEpamSystems = () => (
             </Link>
           </ExperienceSubSection>
           <ExperienceSubSection>
-            &#x2022; &ensp;
             <Link href="https://youtu.be/532kzqd3t4Q" target="_blank">
               Video: [Spanish] AWS CDK Workshop: Infrastructure as Code with
               Santiago Garcia | EPAM Colombia
@@ -97,7 +102,7 @@ const ExperienceEpamSystems = () => (
         </ExperienceSection>
       </Section>
 
-      <Divider my={5} />
+      <Box height="1px" bg="gray.200" my={5} width="100%" />
       <Box style={{ marginTop: '10px' }} />
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">

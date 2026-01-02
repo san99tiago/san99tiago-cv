@@ -1,51 +1,25 @@
-import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+import { createSystem, defaultConfig } from '@chakra-ui/react'
 
-const styles = {
-  global: props => ({
-    body: {
-      bg: mode('#f0e7db', '#202023')(props)
-    }
-  })
-}
-
-const components = {
-  Heading: {
-    variants: {
-      'section-title': {
-        textDecoration: 'underline',
-        fontSize: 20,
-        textUnderlineOffset: 6,
-        textDecorationColor: '#525252',
-        textDecorationThickness: 4,
-        marginTop: 3,
-        marginBottom: 4
+const system = createSystem(defaultConfig, {
+  theme: {
+    tokens: {
+      fonts: {
+        heading: { value: "'M PLUS Rounded 1c'" }
       },
-      'page-title': {
-        fontSize: 26
+      colors: {
+        grassTeal: { value: '#88ccca' }
       }
     }
   },
-  Link: {
-    baseStyle: props => ({
-      color: mode('#3d7aed', '#43b6ff')(props),
-      textUnderlineOffset: 3
-    })
+  globalCss: {
+    html: {
+      colorScheme: 'dark'
+    },
+    body: {
+      bg: '#202023',
+      color: 'white'
+    }
   }
-}
+})
 
-const fonts = {
-  heading: "'M PLUS Rounded 1c'"
-}
-
-const colors = {
-  grassTeal: '#88ccca'
-}
-
-const config = {
-  initialColorMode: 'dark',
-  useSystemColorMode: true
-}
-
-const theme = extendTheme({ config, styles, components, fonts, colors })
-export default theme
+export default system
