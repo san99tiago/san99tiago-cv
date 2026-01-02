@@ -56,7 +56,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             Official Publication EIA University
-            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -68,7 +71,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit
-            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -80,7 +86,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             https://github.com/san99tiago/baxter-bon-appetit-thesis-latex
-            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
@@ -92,7 +101,10 @@ const ExperienceBaxterBonAppetit = () => (
             target="_blank"
           >
             GrabCad 3D Spoon
-            <ExternalLink size={12} style={{ marginLeft: '2px', display: 'inline' }} />
+            <ExternalLink
+              size={12}
+              style={{ marginLeft: '2px', display: 'inline' }}
+            />
           </Link>
         </ExperienceSection>
         <ExperienceSection>
