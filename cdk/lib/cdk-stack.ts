@@ -168,6 +168,7 @@ export class CdkStaticWebsiteHostingStack extends Stack {
       prune: true,  // Remove old files that are no longer in the source
       distribution: cloudfrontDistribution,  // Invalidate CloudFront cache after deployment
       distributionPaths: ['/*'],  // Invalidate all paths
+      memoryLimit: 1024,  // Default 128 MB OOMs since aws-cdk-lib 2.263 (python3.13 handler + newer AWS CLI layer)
     });
 
   }
