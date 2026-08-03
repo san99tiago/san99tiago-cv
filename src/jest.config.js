@@ -8,7 +8,8 @@ module.exports = {
     '!pages/_document.js'
   ],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1'
+    '^@/(.*)$': '<rootDir>/$1',
+    '\\.(jpg|jpeg|png|gif|webp|avif|svg)$': '<rootDir>/__mocks__/fileMock.js'
   },
   transform: {
     '^.+\\.(js|jsx)$': [

@@ -57,11 +57,15 @@ export class CdkStaticWebsiteHostingStack extends Stack {
       validation: acm.CertificateValidation.fromDns(hostedZone),
     })
 
-    certificate.metricDaysToExpiry().createAlarm(this, 'AlarmCertificateExpiration', {
-      comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
-      evaluationPeriods: 1,
-      threshold: 45, // Automatic rotation happens between 60 and 45 days before expiry
-    });
+    // NOTE: Certificate expiration alarm intentionally disabled (2026-08) to avoid costs.
+    // Each CloudWatch alarm bills ~$0.10/month and this alarm had NO actions configured
+    // (no SNS/email), so it never notified anyone. ACM auto-renews DNS-validated
+    // certificates, making this alarm redundant for this setup.
+    // certificate.metricDaysToExpiry().createAlarm(this, 'AlarmCertificateExpiration', {
+    //   comparisonOperator: cloudwatch.ComparisonOperator.LESS_THAN_THRESHOLD,
+    //   evaluationPeriods: 1,
+    //   threshold: 45, // Automatic rotation happens between 60 and 45 days before expiry
+    // });
 
     // Configure CloudFront distribution serving files from S3 bucket
     const cloudfrontOriginAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'CloudFrontOriginAccessIdentity', {

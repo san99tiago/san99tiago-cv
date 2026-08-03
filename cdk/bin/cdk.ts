@@ -20,7 +20,13 @@ const myCdkStack = new CdkStaticWebsiteHostingStack(
   MAIN_RESOURCES_NAME,
   {
     stackName: `cdk-${MAIN_RESOURCES_NAME}-${DEPLOYMENT_ENVIRONMENT}`,
-    env: { account: process.env.CDK_DEFAULT_ACCOUNT, region: process.env.CDK_DEFAULT_REGION },
+    // NOTE: newer aws-cdk CLI versions do not always inject CDK_DEFAULT_ACCOUNT/REGION
+    // into the app process, and Route53 HostedZone.fromLookup requires an explicit
+    // account/region at the stack level. Fall back to the known deployment target.
+    env: {
+      account: process.env.CDK_DEFAULT_ACCOUNT || '226584130046',
+      region: process.env.CDK_DEFAULT_REGION || process.env.AWS_REGION || 'us-east-1'
+    },
     description: `Stack with the infrastructure for ${MAIN_RESOURCES_NAME} in ${DEPLOYMENT_ENVIRONMENT} environment`
   }
 );

@@ -35,7 +35,7 @@ This is a modern, production-ready personal CV website showcasing professional e
 - **CloudFront**: Global CDN with custom domain and SSL/TLS certificates
 - **Route 53**: DNS management for domain and subdomain routing
 - **AWS Certificate Manager**: Automated SSL/TLS certificate provisioning and renewal
-- **CloudWatch**: Monitoring, logging, and alerting for performance insights
+- **CloudWatch**: Monitoring and logging for performance insights. Note: the certificate-expiration alarm was intentionally disabled (2026-08) since it bills ~$0.10/month, had no notification actions, and ACM auto-renews DNS-validated certificates (see commented block in `cdk/lib/cdk-stack.ts`)
 - **CloudFront Functions**: URL rewriting for Next.js compatibility
 
 ### Infrastructure as Code

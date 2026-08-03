@@ -15,6 +15,7 @@ import thumb_2024_06_01_APIs_Avanzadas_AWS_UG_Medellin from '../public/images/co
 import thumb_2024_11_06_WhatsApp_Chatbot_GenAI_AWS from '../public/images/content/2024_11_06_YouTube_Banner_Chatbot_WhatsApp_AWS.png'
 import thumb_2025_07_19_IA_Generativa_AWS from '../public/images/content/2025_07_19_YouTube_Banner_IA_Generativa_Recap_AWS_UGMed.png'
 import thumb_2025_08_28_RAG_Embeddings_GenAI_Women from '../public/images/content/2025_08_28_AWS_RAG_Embeddings_GenAI_Women_Col.jpg'
+import thumb_2026_06_13_AWS_Certificacion_IA_ML_Analitica_DevTools from '../public/images/content/2026_06_13_AWS_Certificacion_IA_ML_Analitica_DevTools_UG_Colombia.jpg'
 
 // End page thumbnails
 import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
@@ -34,6 +35,11 @@ const Content = () => (
 
       <Section>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            title="AWS Certificación - IA/ML, Integraciones, Analítica, y DevTools - AWS UGs Colombia"
+            thumbnail={thumb_2026_06_13_AWS_Certificacion_IA_ML_Analitica_DevTools}
+            href="https://youtu.be/-wMoqxRRFvE"
+          />
           <GridItem
             title="Tokens, Embeddings, RAG - GenAI (AWS Women Colombia)"
             thumbnail={thumb_2025_08_28_RAG_Embeddings_GenAI_Women}
