@@ -37,7 +37,9 @@ const Content = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="AWS Certificación - IA/ML, Integraciones, Analítica, y DevTools - AWS UGs Colombia"
-            thumbnail={thumb_2026_06_13_AWS_Certificacion_IA_ML_Analitica_DevTools}
+            thumbnail={
+              thumb_2026_06_13_AWS_Certificacion_IA_ML_Analitica_DevTools
+            }
             href="https://youtu.be/-wMoqxRRFvE"
           />
           <GridItem
