@@ -16,6 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import TypingAnimation from '../components/typing-animation'
 
 // End page thumbnails
 import thumbYouTube from '../public/images/home/thumbnail_san99tiago_youtube.png'
@@ -25,283 +26,295 @@ import thumbInstagram from '../public/images/home/thumbnail_san99tiago_instagram
 
 // Using Next.js Image component directly for better optimization
 
-const Home = () => (
-  <Layout>
-    <Container
-      maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
-      px={{ base: 4, md: 6, lg: 8 }}
-    >
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg="whiteAlpha.200"
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hey, I love to learn new tech things everyday!
-      </Box>
+const Home = () => {
+  const typingLines = [
+    "Nice to meet you! I'm Santiago Garcia Arango (san99tiago)",
+    'A curious Solutions Architect passionate about AWS and DevOps',
+    'I love to learn new things everyday',
+    '...and use them to solve challenging problems!',
+    'I started developing software solutions back on 2015',
+    '...and everyday I love the tech world even more!',
+    'I design transactional Event Driven Architectures for the cloud',
+    '...by leveraging IaC and top notch DevOps solutions on AWS...',
+    'I also enjoy sharing my knowledge by explaining tech topics to others',
+    '...so feel free to reach out to me if I can help somehow!',
+    'Learn more about me at: san99tiago.com'
+  ]
 
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            Santiago Garcia Arango
-          </Heading>
-          {
-            <p>
-              {' '}
-              Solutions Architect at AWS | AWS UG Leader | GenAI Enthusiast{' '}
-            </p>
-          }
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
+  return (
+    <Layout>
+      <Container
+        maxW={{ base: '100%', md: '80%', lg: '70%', xl: '60%' }}
+        px={{ base: 4, md: 6, lg: 8 }}
+      >
+        <TypingAnimation
+          lines={typingLines}
+          typingSpeed={50}
+          pauseDuration={2000}
+        />
+
+        <Box display={{ md: 'flex' }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              Santiago Garcia Arango
+            </Heading>
+            {
+              <p>
+                {' '}
+                Solutions Architect at AWS | AWS UG Leader | GenAI
+                Enthusiast{' '}
+              </p>
+            }
+          </Box>
           <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w={{ base: '100px', md: '120px' }}
-            h={{ base: '100px', md: '120px' }}
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
           >
-            <Image
-              src="/images/SantiagoGarciaArango_Profile_MAIN.png"
-              alt="Profile Image - Santiago Garcia Arango"
-              width={120}
-              height={120}
-              style={{
-                borderRadius: '50%',
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%'
-              }}
-            />
+            <Box
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              w={{ base: '100px', md: '120px' }}
+              h={{ base: '100px', md: '120px' }}
+              display="inline-block"
+              borderRadius="full"
+              overflow="hidden"
+            >
+              <Image
+                src="/images/SantiagoGarciaArango_Profile_MAIN.png"
+                alt="Profile Image - Santiago Garcia Arango"
+                width={120}
+                height={120}
+                style={{
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
+            </Box>
           </Box>
         </Box>
-      </Box>
 
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Who Am I?
-        </Heading>
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+            Who Am I?
+          </Heading>
 
-        <Paragraph>
-          As a Solutions Architect at AWS experienced in DevOps and AI,
-          I&lsquo;m passionate about helping customers build cutting-edge
-          solutions using event-driven architectures (EDA), Internal Developer
-          Platforms (IDPs) and using Generative AI to boost business outcomes
-          and build the future. I work with top FSI clients across LATAM,
-          driving cloud adoption and leading innovative projects with DevSecOps
-          and AWS.
-        </Paragraph>
+          <Paragraph>
+            As a Solutions Architect at AWS experienced in DevOps and AI,
+            I&lsquo;m passionate about helping customers build cutting-edge
+            solutions using event-driven architectures (EDA), Internal Developer
+            Platforms (IDPs) and using Generative AI to boost business outcomes
+            and build the future. I work with top FSI clients across LATAM,
+            driving cloud adoption and leading innovative projects with
+            DevSecOps and AWS.
+          </Paragraph>
 
-        <Box style={{ marginTop: '10px' }} />
+          <Box style={{ marginTop: '10px' }} />
 
-        <Paragraph>
-          Likewise, I&lsquo;m passionate about sharing my knowledge in fun ways
-          and learning the art of &quot;how everything actually works&quot;,
-          driven by a vision of a better future thanks to technology. I&lsquo;m
-          eager to be part of the ongoing transformation of technology and its
-          interesting impact on our daily lives.
-        </Paragraph>
+          <Paragraph>
+            Likewise, I&lsquo;m passionate about sharing my knowledge in fun
+            ways and learning the art of &quot;how everything actually
+            works&quot;, driven by a vision of a better future thanks to
+            technology. I&lsquo;m eager to be part of the ongoing transformation
+            of technology and its interesting impact on our daily lives.
+          </Paragraph>
 
-        <Box style={{ marginTop: '10px' }} />
+          <Box style={{ marginTop: '10px' }} />
 
-        <Paragraph>
-          Discover my starting YouTube channel for exciting Spanish content:
-          &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/@san99tiago"
-            passHref
-            target="_blank"
-            color="teal.300"
-            _hover={{ color: 'teal.500', textDecoration: 'underline' }}
-          >
-            Santiago Garcia Arango Tech
-          </Link>
-          &quot; where I upload cool videos about DevOps and AWS.
-        </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/content"
-            // scroll={false}
-            colorPalette="teal"
-          >
-            Explore my latest posts!
-            <ChevronRight size={16} style={{ marginLeft: '8px' }} />
-          </Button>
-        </Box>
-      </Section>
+          <Paragraph>
+            Discover my starting YouTube channel for exciting Spanish content:
+            &quot;
+            <Link
+              as={NextLink}
+              href="https://www.youtube.com/@san99tiago"
+              passHref
+              target="_blank"
+              color="teal.300"
+              _hover={{ color: 'teal.500', textDecoration: 'underline' }}
+            >
+              Santiago Garcia Arango Tech
+            </Link>
+            &quot; where I upload cool videos about DevOps and AWS.
+          </Paragraph>
+          <Box align="center" my={4}>
+            <Button
+              as={NextLink}
+              href="/content"
+              // scroll={false}
+              colorPalette="teal"
+            >
+              Explore my latest posts!
+              <ChevronRight size={16} style={{ marginLeft: '8px' }} />
+            </Button>
+          </Box>
+        </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Technical Tools
-        </Heading>
-        <BioSection>
-          <BioYear>Languages</BioYear>
-          Python (Main), JavaScript, TypeScript, Bash, HTML, CSS, GoLang, Java,
-          SQL, GraphQL, MATLAB, Arduino.
-        </BioSection>
-        <BioSection>
-          <BioYear>Methodologies</BioYear>
-          CI/CD, Infrastructure as Code, DevSecOps, Event Driven Architectures,
-          TDD, SOLID, Design Patterns, Automation, Clean Code, Static Code
-          Analysis, Pair Programming, Scrum.
-        </BioSection>
-        <BioSection>
-          <BioYear>Technical</BioYear>
-          Git, AWS (see details below), Terraform, Docker, Kubernetes, Linux
-          Distributions, GitLab CI, Azure DevOps, Jenkins, SonarQube, SQL,
-          No-SQL, IBM WAS, IBM MQ, Packer, OWASP, MetaSploit, Wireshark, Netcat,
-          IoT, LaTex.
-        </BioSection>
-        <BioSection>
-          <BioYear>AWS Experience</BioYear>
-          [10x AWS Certifications], IAM, CloudFormation, CDK, Organizations,
-          Lambda, Lambda Layer, EventBridge, API Gateway, DynamoDB, CloudWatch,
-          S3, CloudFront, Step Functions, SQS, SNS, SES, Route53, ACM, AMI, EC2,
-          Bedrock, EBS, EFS, ASG, VPC, Transit Gateway, IPAM, Athena, Glue, SSM,
-          CodeBuild, CodePipeline, IAM Identity Center (SSO), Control Tower,
-          Kinesis, Chime.
-        </BioSection>
-      </Section>
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Technical Tools
+          </Heading>
+          <BioSection>
+            <BioYear>Languages</BioYear>
+            Python (Main), JavaScript, TypeScript, Bash, HTML, CSS, GoLang,
+            Java, SQL, GraphQL, MATLAB, Arduino.
+          </BioSection>
+          <BioSection>
+            <BioYear>Methodologies</BioYear>
+            CI/CD, Infrastructure as Code, DevSecOps, Event Driven
+            Architectures, TDD, SOLID, Design Patterns, Automation, Clean Code,
+            Static Code Analysis, Pair Programming, Scrum.
+          </BioSection>
+          <BioSection>
+            <BioYear>Technical</BioYear>
+            Git, AWS (see details below), Terraform, Docker, Kubernetes, Linux
+            Distributions, GitLab CI, Azure DevOps, Jenkins, SonarQube, SQL,
+            No-SQL, IBM WAS, IBM MQ, Packer, OWASP, MetaSploit, Wireshark,
+            Netcat, IoT, LaTex.
+          </BioSection>
+          <BioSection>
+            <BioYear>AWS Experience</BioYear>
+            [10x AWS Certifications], IAM, CloudFormation, CDK, Organizations,
+            Lambda, Lambda Layer, EventBridge, API Gateway, DynamoDB,
+            CloudWatch, S3, CloudFront, Step Functions, SQS, SNS, SES, Route53,
+            ACM, AMI, EC2, Bedrock, EBS, EFS, ASG, VPC, Transit Gateway, IPAM,
+            Athena, Glue, SSM, CodeBuild, CodePipeline, IAM Identity Center
+            (SSO), Control Tower, Kinesis, Chime.
+          </BioSection>
+        </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Education & Experience
-        </Heading>
-        <BioSection>
-          <BioYear>2024-present</BioYear>
-          Solutions Architect
-          <a href="https://aws.amazon.com" target="_blank">
-            <b> @ Amazon Web Services (AWS)</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2023-2024</BioYear>
-          Lead Systems Engineer (DevOps)
-          <a href="https://www.epam.com" target="_blank">
-            <b> @ EPAM Systems</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2022-2023</BioYear>
-          Senior Systems Engineer (DevOps)
-          <a href="https://www.epam.com" target="_blank">
-            <b> @ EPAM Systems</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2022-2024</BioYear>
-          M.S. Cybersecurity
-          <a href="https://www.imf-formacion.com" target="_blank">
-            <b> @ IMF Smart Education</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Software Engineering Specialist (DevOps)
-          <a href="https://www.grupobancolombia.com" target="_blank">
-            <b> @ Bancolombia</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          DevOps Engineer
-          <a href="https://www.pragma.co" target="_blank">
-            <b> @ PRAGMA</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>2017-2021</BioYear>
-          B.S. Mechatronics Engineering
-          <a href="https://www.eia.edu.co" target="_blank">
-            <b> @ EIA University</b>
-          </a>
-        </BioSection>
-      </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Education & Experience
+          </Heading>
+          <BioSection>
+            <BioYear>2024-present</BioYear>
+            Solutions Architect
+            <a href="https://aws.amazon.com" target="_blank">
+              <b> @ Amazon Web Services (AWS)</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2023-2024</BioYear>
+            Lead Systems Engineer (DevOps)
+            <a href="https://www.epam.com" target="_blank">
+              <b> @ EPAM Systems</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2022-2023</BioYear>
+            Senior Systems Engineer (DevOps)
+            <a href="https://www.epam.com" target="_blank">
+              <b> @ EPAM Systems</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2022-2024</BioYear>
+            M.S. Cybersecurity
+            <a href="https://www.imf-formacion.com" target="_blank">
+              <b> @ IMF Smart Education</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2021</BioYear>
+            Software Engineering Specialist (DevOps)
+            <a href="https://www.grupobancolombia.com" target="_blank">
+              <b> @ Bancolombia</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2021</BioYear>
+            DevOps Engineer
+            <a href="https://www.pragma.co" target="_blank">
+              <b> @ PRAGMA</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2017-2021</BioYear>
+            B.S. Mechatronics Engineering
+            <a href="https://www.eia.edu.co" target="_blank">
+              <b> @ EIA University</b>
+            </a>
+          </BioSection>
+        </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Communities & Volunteering
-        </Heading>
-        <BioSection>
-          <BioYear>AWS UG Medellin Leader</BioYear>
-          AWS User Group Medellin Leader for official AWS events and workshops
-          in Medellin
-          <a href="https://www.meetup.com/aws-medellin/" target="_blank">
-            <b> @ Meetup AWS Medellin</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>AWS CB Serverless</BioYear>
-          AWS Community Builder for the Serverless Technologies
-          <a
-            href="https://aws.amazon.com/developer/community/community-builders/"
-            target="_blank"
-          >
-            <b> @ AWS Community Builders</b>
-          </a>
-        </BioSection>
-        <BioSection>
-          <BioYear>CloudCrafters Core Team</BioYear>
-          Core Organizer for CloudCrafters: community of Cloud and DevOps
-          enthusiasts in LATAM
-          <a
-            href="https://wearecommunity.io/communities/cloudcrafters"
-            target="_blank"
-          >
-            <b> @ CloudCrafters Community</b>
-          </a>
-        </BioSection>
-      </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Communities & Volunteering
+          </Heading>
+          <BioSection>
+            <BioYear>AWS UG Medellin Leader</BioYear>
+            AWS User Group Medellin Leader for official AWS events and workshops
+            in Medellin
+            <a href="https://www.meetup.com/aws-medellin/" target="_blank">
+              <b> @ Meetup AWS Medellin</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>AWS CB Serverless</BioYear>
+            AWS Community Builder for the Serverless Technologies
+            <a
+              href="https://aws.amazon.com/developer/community/community-builders/"
+              target="_blank"
+            >
+              <b> @ AWS Community Builders</b>
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>CloudCrafters Core Team</BioYear>
+            Core Organizer for CloudCrafters: community of Cloud and DevOps
+            enthusiasts in LATAM
+            <a
+              href="https://wearecommunity.io/communities/cloudcrafters"
+              target="_blank"
+            >
+              <b> @ CloudCrafters Community</b>
+            </a>
+          </BioSection>
+        </Section>
 
-      <Section delay={0.5}>
-        <Heading as="h3" variant="section-title">
-          Find Out More
-        </Heading>
+        <Section delay={0.5}>
+          <Heading as="h3" variant="section-title">
+            Find Out More
+          </Heading>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/@san99tiago"
-            title="Santiago Garcia Arango Tech"
-            alt="YouTube Santiago Garcia Arango"
-            thumbnail={thumbYouTube}
-          >
-            DevOps and AWS Tutorials!
-          </GridItem>
-          <GridItem
-            href="https://github.com/san99tiago"
-            title="GitHub san99tiago"
-            alt="GitHub san99tiago"
-            thumbnail={thumbGitHub}
-          >
-            Open Source projects!
-          </GridItem>
-          <GridItem
-            href="https://www.linkedin.com/in/san99tiago/"
-            title="LinkedIn san99tiago"
-            alt="LinkedIn san99tiago"
-            thumbnail={thumbLinkedin}
-          ></GridItem>
-          <GridItem
-            href="https://instagram.com/san99tiago"
-            title="Instagram san99tiago"
-            alt="Instagram san99tiago"
-            thumbnail={thumbInstagram}
-          ></GridItem>
-        </SimpleGrid>
-      </Section>
-    </Container>
-  </Layout>
-)
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              href="https://www.youtube.com/@san99tiago"
+              title="Santiago Garcia Arango Tech"
+              alt="YouTube Santiago Garcia Arango"
+              thumbnail={thumbYouTube}
+            >
+              DevOps and AWS Tutorials!
+            </GridItem>
+            <GridItem
+              href="https://github.com/san99tiago"
+              title="GitHub san99tiago"
+              alt="GitHub san99tiago"
+              thumbnail={thumbGitHub}
+            >
+              Open Source projects!
+            </GridItem>
+            <GridItem
+              href="https://www.linkedin.com/in/san99tiago/"
+              title="LinkedIn san99tiago"
+              alt="LinkedIn san99tiago"
+              thumbnail={thumbLinkedin}
+            ></GridItem>
+            <GridItem
+              href="https://instagram.com/san99tiago"
+              title="Instagram san99tiago"
+              alt="Instagram san99tiago"
+              thumbnail={thumbInstagram}
+            ></GridItem>
+          </SimpleGrid>
+        </Section>
+      </Container>
+    </Layout>
+  )
+}
 
 export default Home
