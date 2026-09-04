@@ -15,13 +15,13 @@
   "author": "Santiago Garcia Arango",
   "license": "Apache License",
   "dependencies": {
-    "@chakra-ui/react": "^3.36.1",
+    "@chakra-ui/react": "^3.37.0",
     "@chakra-ui/theme-tools": "^2.2.6",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "framer-motion": "^12.43.0",
-    "lucide-react": "^1.28.0",
-    "next": "^16.2.12",
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.41.0",
+    "next": "^16.3.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-icons": "^5.7.0"
