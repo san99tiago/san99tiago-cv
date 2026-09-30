@@ -102,7 +102,7 @@ This implementation plan covers the comprehensive modernization of Santiago's CV
 
   - [x] 7.2 Update AWS certifications count
 
-    - Change to "10x AWS Certifications" in AWS Experience section
+    - Change to "11x AWS Certifications" in AWS Experience section
     - _Requirements: 3.1_
 
   - [x] 7.3 Update current role description

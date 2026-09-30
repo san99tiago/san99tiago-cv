@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This specification covers the modernization and content update of Santiago García Arango's personal CV website. The project involves updating React/Next.js dependencies to latest versions, adding comprehensive testing, and updating content to reflect current professional status as Solutions Architect at AWS with 10x AWS certifications.
+This specification covers the modernization and content update of Santiago García Arango's personal CV website. The project involves updating React/Next.js dependencies to latest versions, adding comprehensive testing, and updating content to reflect current professional status as Solutions Architect at AWS with 11x AWS certifications.
 
 ## Glossary
 
@@ -45,7 +45,7 @@ This specification covers the modernization and content update of Santiago Garc�
 
 #### Acceptance Criteria
 
-1. WHEN updating certifications, THE CV_Website SHALL display "10x AWS Certifications" instead of previous count
+1. WHEN updating certifications, THE CV_Website SHALL display "11x AWS Certifications" instead of previous count
 2. WHEN updating current role, THE CV_Website SHALL show "Solutions Architect at AWS" as current position
 3. WHEN updating heading, THE CV_Website SHALL display "Solutions Architect at AWS | AWS UG Leader | GenAI Enthusiast"
 4. WHEN displaying work experience, THE CV_Website SHALL include AWS Solutions Architect role with appropriate details
