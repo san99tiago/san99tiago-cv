@@ -107,7 +107,7 @@ disabled={true}
 ```javascript
 const professionalInfo = {
   currentRole: "Solutions Architect at AWS",
-  certifications: "10x AWS Certifications",
+  certifications: "11x AWS Certifications",
   heading: "Solutions Architect at AWS | AWS UG Leader | GenAI Enthusiast",
   awsExperience: {
     role: "Solutions Architect",

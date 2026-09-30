@@ -12,7 +12,7 @@ This document records all content updates, additions, and technical changes made
 
 - Updated main heading to: "Solutions Architect at AWS | AWS UG Leader | GenAI Enthusiast"
 - Updated professional description to reflect Solutions Architect role at AWS
-- Changed AWS certifications count from previous value to "10x AWS Certifications"
+- Changed AWS certifications count from previous value to "11x AWS Certifications"
 
 ### AWS Work Experience Addition
 

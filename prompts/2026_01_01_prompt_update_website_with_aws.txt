@@ -6,7 +6,7 @@ Now proceed to help me UPDATE the "src" code with:
 
 3) Update the main SRC code towards up to date information, include:
 
-- Now I have 10x AWS Certifications.
+- Now I have 11x AWS Certifications.
 
 - Now I work on Amazon Web Services as an "Solutions Architect". 
 
